@@ -9,33 +9,92 @@ Foundation for a bilingual (Korean primary, English secondary) telemedicine book
 - PostgreSQL + Ecto
 - Gettext (`ko`, `en`)
 
-## Prerequisites
+## Team Quickstart (Recommended)
 
-- Elixir `~> 1.15` (tested with 1.17.x)
-- Erlang/OTP
-- PostgreSQL (running locally)
+This path gives consistent setup across dev machines.
 
-## Setup
+1. Copy env template.
+
+```bash
+cp .env.example .env
+```
+
+2. Export environment variables.
+
+```bash
+set -a; source .env; set +a
+```
+
+3. Start PostgreSQL via Docker Compose.
+
+```bash
+docker compose up -d db
+```
+
+4. Install and setup project.
 
 ```bash
 mix deps.get
-mix ecto.setup
-mix assets.setup
+mix setup
 ```
 
-## Run server
+5. Run server.
 
 ```bash
 mix phx.server
 ```
 
-Open `http://localhost:4000`.
-
-## Run tests
+6. Verify app endpoints.
 
 ```bash
+curl -i http://localhost:4000/health
+```
+
+Expected: HTTP `200` and body `ok`.
+
+## Daily Dev Commands
+
+```bash
+set -a; source .env; set +a
+mix phx.server
+```
+
+In another terminal:
+
+```bash
+set -a; source .env; set +a
 mix test
 ```
+
+## If You Already Have Local PostgreSQL (No Docker)
+
+1. Copy and load env file.
+
+```bash
+cp .env.example .env
+set -a; source .env; set +a
+```
+
+2. Ensure role/db exist and credentials match `.env`.
+
+3. Run setup.
+
+```bash
+mix setup
+```
+
+4. Start app.
+
+```bash
+mix phx.server
+```
+
+## Configuration Model
+
+- `config/dev.exs` reads DB values from:
+  - `DB_USER`, `DB_PASS`, `DB_HOST`, `DB_PORT`, `DB_NAME`
+- `config/test.exs` reads from:
+  - `TEST_DB_*` (or falls back to `DB_*`)
 
 ## Foundation implemented
 

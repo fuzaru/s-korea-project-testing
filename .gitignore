@@ -35,3 +35,6 @@ medigrand-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Local env files
+.env
+.env.local

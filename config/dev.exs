@@ -1,11 +1,18 @@
 import Config
 
+db_user = System.get_env("DB_USER", "postgres")
+db_pass = System.get_env("DB_PASS", "postgres")
+db_host = System.get_env("DB_HOST", "localhost")
+db_port = String.to_integer(System.get_env("DB_PORT", "5432"))
+db_name = System.get_env("DB_NAME", "medigrand_dev")
+
 # Configure your database
 config :medigrand, Medigrand.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "medigrand_dev",
+  username: db_user,
+  password: db_pass,
+  hostname: db_host,
+  port: db_port,
+  database: db_name,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -54,6 +61,7 @@ config :medigrand, MedigrandWeb.Endpoint,
 
 # Reload browser tabs when matching files change.
 config :medigrand, MedigrandWeb.Endpoint,
+  http: [ip: {127, 0, 0, 1}, port: 4000],
   live_reload: [
     web_console_logger: true,
     patterns: [
