@@ -87,7 +87,7 @@ mix quality
 mix precommit
 ```
 
-`mix quality` runs formatting check, compile warnings-as-errors, strict Credo, and tests.
+`mix quality` runs formatting check, compile warnings-as-errors, Credo, and tests.
 
 ## Troubleshooting (Team)
 
