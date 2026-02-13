@@ -6,16 +6,6 @@ default:
   services:
     - name: postgres:16
       alias: postgres
-  variables:
-    MIX_ENV: test
-    TEST_DB_USER: postgres
-    TEST_DB_PASS: postgres
-    TEST_DB_HOST: postgres
-    TEST_DB_PORT: "5432"
-    TEST_DB_NAME: medigrand_test
-    POSTGRES_DB: medigrand_test
-    POSTGRES_USER: postgres
-    POSTGRES_PASSWORD: postgres
   cache:
     key:
       files:
@@ -30,6 +20,16 @@ default:
 
 quality_and_tests:
   stage: test
+  variables:
+    MIX_ENV: test
+    TEST_DB_USER: postgres
+    TEST_DB_PASS: postgres
+    TEST_DB_HOST: postgres
+    TEST_DB_PORT: "5432"
+    TEST_DB_NAME: medigrand_test
+    POSTGRES_DB: medigrand_test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
   script:
     - mix format --check-formatted
     - mix compile --warnings-as-errors
