@@ -68,6 +68,47 @@ set -a; source .env; set +a
 mix test
 ```
 
+## Troubleshooting (Team)
+
+### `watchman: not found`
+
+- This is non-blocking in development; Phoenix still runs.
+- Optional install on Ubuntu:
+
+```bash
+sudo apt install watchman
+```
+
+### `password authentication failed for user "postgres"`
+
+This usually means Docker Postgres was initialized earlier with a different password (existing volume state).
+
+1. Ensure env vars are loaded:
+
+```bash
+cp .env.example .env
+set -a; source .env; set +a
+```
+
+2. Recreate Postgres volume and container:
+
+```bash
+docker compose down -v
+docker compose up -d db
+```
+
+3. Verify DB credentials directly:
+
+```bash
+PGPASSWORD=$DB_PASS psql -h $DB_HOST -p $DB_PORT -U $DB_USER -d postgres -c "SELECT 1;"
+```
+
+4. Re-run project DB setup:
+
+```bash
+mix ecto.setup
+```
+
 ## If You Already Have Local PostgreSQL (No Docker)
 
 1. Copy and load env file.
