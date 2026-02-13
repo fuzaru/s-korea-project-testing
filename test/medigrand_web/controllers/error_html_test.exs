@@ -1,4 +1,5 @@
 defmodule MedigrandWeb.ErrorHTMLTest do
+  @moduledoc false
   use MedigrandWeb.ConnCase, async: true
 
   import Phoenix.Template, only: [render_to_string: 4]
