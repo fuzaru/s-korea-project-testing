@@ -59,50 +59,7 @@ curl -i http://localhost:4000/health
 
 Expected result: HTTP `200` and body `ok`.
 
-## Team Quickstart (Recommended)
-
-This path gives consistent setup across dev machines.
-
-1. Copy env template.
-
-```bash
-cp .env.example .env
-```
-
-2. Export environment variables.
-
-```bash
-set -a; source .env; set +a
-```
-
 Default Docker DB port is `5433` (to avoid conflict with local PostgreSQL on `5432`).
-
-3. Start PostgreSQL via Docker Compose.
-
-```bash
-docker compose up -d db
-```
-
-4. Install and setup project.
-
-```bash
-mix deps.get
-mix setup
-```
-
-5. Run server.
-
-```bash
-mix phx.server
-```
-
-6. Verify app endpoints.
-
-```bash
-curl -i http://localhost:4000/health
-```
-
-Expected: HTTP `200` and body `ok`.
 
 ## Daily Dev Commands
 
@@ -155,11 +112,7 @@ sudo apt install watchman
 This usually means Docker Postgres was initialized earlier with a different password (existing volume state).
 
 1. Ensure env vars are loaded:
-
-```bash
-cp .env.example .env
-set -a; source .env; set +a
-```
+   Use steps 3 and 4 from `Fresh Machine Setup (Step-by-Step)`.
 
 2. Recreate Postgres volume and container:
 
@@ -183,11 +136,7 @@ mix ecto.setup
 ## If You Already Have Local PostgreSQL (No Docker)
 
 1. Copy and load env file.
-
-```bash
-cp .env.example .env
-set -a; source .env; set +a
-```
+   Use steps 3 and 4 from `Fresh Machine Setup (Step-by-Step)`.
 
 2. If using local PostgreSQL on `5432`, change these in `.env`:
 
