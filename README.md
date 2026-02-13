@@ -135,6 +135,35 @@ PGPASSWORD=$DB_PASS psql -h $DB_HOST -p $DB_PORT -U $DB_USER -d postgres -c "SEL
 mix ecto.setup
 ```
 
+### `Bunt.puts/1 is undefined (module Bunt is not available)` when running `mix credo`
+
+This usually means dependencies are not fully fetched/compiled on that machine.
+
+1. Load env vars:
+   Use steps 3 and 4 from `Fresh Machine Setup (Step-by-Step)`.
+2. Clean and reinstall deps:
+
+```bash
+mix deps.clean --all
+mix deps.get
+mix deps.compile
+```
+
+3. Retry Credo:
+
+```bash
+mix credo
+```
+
+If it still fails, remove local build artifacts and retry:
+
+```bash
+rm -rf _build deps
+mix deps.get
+mix compile
+mix credo
+```
+
 ## If You Already Have Local PostgreSQL (No Docker)
 
 1. Copy and load env file.
