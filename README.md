@@ -61,7 +61,7 @@ curl -i http://localhost:4000/health
 
 Expected result: HTTP `200` and body `ok`.
 
-Default Docker DB port is `5433` (to avoid conflict with local PostgreSQL on `5432`).
+Default DB port is `5432` for both Docker and local PostgreSQL.
 
 ## Daily Dev Commands
 
@@ -154,22 +154,15 @@ mix deps.get
 1. Copy and load env file.
    Use steps 3 and 4 from `Fresh Machine Setup (Step-by-Step)`.
 
-2. If using local PostgreSQL on `5432`, change these in `.env`:
+2. Ensure role/db exist and credentials match `.env`.
 
-```bash
-DB_PORT=5432
-TEST_DB_PORT=5432
-```
-
-3. Ensure role/db exist and credentials match `.env`.
-
-4. Run setup.
+3. Run setup.
 
 ```bash
 mix setup
 ```
 
-5. Start app.
+4. Start app.
 
 ```bash
 mix phx.server
