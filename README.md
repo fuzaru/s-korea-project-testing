@@ -2,7 +2,7 @@
 
 Foundation for a bilingual (Korean primary, English secondary) telemedicine booking site.
 
-New to the stack? Start with `DEVELOPER_GUIDE.md` for a beginner-friendly explanation of files and daily workflow.
+Dev guide: `DEVELOPER_GUIDE.md` - explanation of files and daily workflow.
 
 ## Stack
 
