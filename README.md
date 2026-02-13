@@ -68,6 +68,27 @@ set -a; source .env; set +a
 mix test
 ```
 
+## Quality Tooling (Installed In Repo)
+
+Project-local tooling is installed and versioned in `mix.exs`:
+
+- `credo` for static code analysis
+- `dialyxir` for Dialyzer integration
+- `ex_doc` for docs generation
+
+Commands:
+
+```bash
+mix credo
+mix credo --strict
+mix dialyzer
+mix docs
+mix quality
+mix precommit
+```
+
+`mix quality` runs formatting check, compile warnings-as-errors, strict Credo, and tests.
+
 ## Troubleshooting (Team)
 
 ### `watchman: not found`
