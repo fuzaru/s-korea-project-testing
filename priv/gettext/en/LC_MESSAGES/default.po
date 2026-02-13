@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Browse doctors"
+msgstr "Browse doctors"
+
+msgid "English"
+msgstr "English"
+
+msgid "Korean-first scheduling foundation for white-label telemedicine portals."
+msgstr "Korean-first scheduling foundation for white-label telemedicine portals."
+
+msgid "Medigrand"
+msgstr "Medigrand"
+
+msgid "Medigrand foundation for bilingual telemedicine booking."
+msgstr "Medigrand foundation for bilingual telemedicine booking."
+
+msgid "Medigrand logo"
+msgstr "Medigrand logo"
+
+msgid "Start booking flow"
+msgstr "Start booking flow"
+
+msgid "Telemedicine"
+msgstr "Telemedicine"
+
+msgid "Trusted telemedicine booking for clinics and hospitals"
+msgstr "Trusted telemedicine booking for clinics and hospitals"
+
+msgid "한국어"
+msgstr "Korean"

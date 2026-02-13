@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Language: ko\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Browse doctors"
+msgstr "의료진 둘러보기"
+
+msgid "English"
+msgstr "English"
+
+msgid "Korean-first scheduling foundation for white-label telemedicine portals."
+msgstr "화이트라벨 원격진료 포털을 위한 한국어 중심 예약 기반입니다."
+
+msgid "Medigrand"
+msgstr "Medigrand"
+
+msgid "Medigrand foundation for bilingual telemedicine booking."
+msgstr "이중 언어 원격진료 예약을 위한 Medigrand 기반입니다."
+
+msgid "Medigrand logo"
+msgstr "Medigrand 로고"
+
+msgid "Start booking flow"
+msgstr "예약 시작하기"
+
+msgid "Telemedicine"
+msgstr "원격진료"
+
+msgid "Trusted telemedicine booking for clinics and hospitals"
+msgstr "병원과 의원을 위한 신뢰할 수 있는 원격진료 예약"
+
+msgid "한국어"
+msgstr "한국어"
