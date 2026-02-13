@@ -9,6 +9,56 @@ Foundation for a bilingual (Korean primary, English secondary) telemedicine book
 - PostgreSQL + Ecto
 - Gettext (`ko`, `en`)
 
+## Fresh Machine Setup (Step-by-Step)
+
+Use this when you clone the repo on a brand-new machine.
+
+1. Install prerequisites: `git`, `docker`, `docker compose`, Elixir/Erlang.
+2. Enter the project directory.
+
+```bash
+cd s-korea-project-testing
+```
+
+3. Create local env file.
+
+```bash
+cp .env.example .env
+```
+
+4. Load env vars in your shell.
+
+```bash
+set -a; source .env; set +a
+```
+
+5. Start PostgreSQL container.
+
+```bash
+docker compose up -d db
+```
+
+6. Install dependencies and initialize app/database.
+
+```bash
+mix deps.get
+mix setup
+```
+
+7. Start the server.
+
+```bash
+mix phx.server
+```
+
+8. Verify app is running.
+
+```bash
+curl -i http://localhost:4000/health
+```
+
+Expected result: HTTP `200` and body `ok`.
+
 ## Team Quickstart (Recommended)
 
 This path gives consistent setup across dev machines.
