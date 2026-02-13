@@ -20,12 +20,6 @@ config :medigrand, MedigrandWeb.Endpoint,
   secret_key_base: "sCV+3lr52G8WzYsYQBJvZHixJfMd3nHQYjw27WZvuC2duIvs831ODoRg38LBK5cX",
   server: false
 
-# In test we don't send emails
-config :medigrand, Medigrand.Mailer, adapter: Swoosh.Adapters.Test
-
-# Disable swoosh api client as it is only required for production adapters
-config :swoosh, :api_client, false
-
 # Print only warnings and errors during test
 config :logger, level: :warning
 
