@@ -34,9 +34,13 @@ defmodule MedigrandWeb.Layouts do
   def app(assigns) do
     ~H"""
     <div class="min-h-screen">
-      <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+      <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-green/600 backdrop-blur">
         <div class="border-b border-slate-200/70">
-          <div class="mx-auto flex max-w-6xl items-center justify-end px-4 py-1.5 sm:px-6">
+          <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+            <nav class="hidden items-center gap-6 text-sm font-medium text-slate-700 sm:flex">
+              <a href={~p"/"}>{gettext("+82 28610902")}</a>
+              <a href={~p"/"}>{gettext("support@medigrand.com")}</a>
+            </nav>
             <nav class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 p-0.5 text-xs">
               <a
                 href={locale_path(@current_path, "ko")}
@@ -59,43 +63,49 @@ defmodule MedigrandWeb.Layouts do
             </nav>
           </div>
         </div>
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <div class="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href={~p"/"} class="inline-flex items-center gap-2">
             <img src={~p"/images/logo.svg"} width="30" alt={gettext("Medigrand logo")} />
             <span class="text-lg font-bold tracking-tight">{gettext("Medigrand")}</span>
           </a>
 
-          <nav class="hidden items-center gap-6 sm:flex">
-            <a href={~p"/"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
+          <nav class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex">
+            <a
+              href={~p"/"}
+              class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+            >
               {gettext("HOME")}
             </a>
-            <a href={~p"/"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
+            <a
+              href={~p"/"}
+              class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+            >
               {gettext("DOCTORS")}
             </a>
             <div class="group relative">
               <button
                 type="button"
-                class="inline-flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-slate-900"
+                class="inline-flex items-center rounded-md gap-1 px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("SERVICES")}
                 <.icon name="hero-chevron-down" class="size-4" />
               </button>
-              <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
+              <div class="absolute left-0 top-full mt-2 hidden w-56 shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block border-b border-slate-200 px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("CONSULTATIONS")}
                 </a>
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block border-b border-slate-200 px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("CARE PROGRAMS")}
                 </a>
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("TELEMEDICINE")}
                 </a>
@@ -104,27 +114,27 @@ defmodule MedigrandWeb.Layouts do
             <div class="group relative">
               <button
                 type="button"
-                class="inline-flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-slate-900"
+                class="inline-flex items-center rounded-md gap-1 px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("RESOURCES")}
                 <.icon name="hero-chevron-down" class="size-4" />
               </button>
-              <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
+              <div class="absolute left-0 rounded-md top-full mt-2 hidden w-56 shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block border-b border-slate-200 px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("BLOG")}
                 </a>
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block border-b border-slate-200 px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("GUIDES")}
                 </a>
                 <a
                   href={~p"/"}
-                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                  class="block px-6 py-2 text-sm text-slate-900 transition hover:bg-emerald-300 hover:text-white"
                 >
                   {gettext("FAQ")}
                 </a>
@@ -132,22 +142,18 @@ defmodule MedigrandWeb.Layouts do
             </div>
             <a
               href={~p"/"}
-              class="text-sm font-medium text-slate-700 hover:text-slate-900"
+              class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
             >
               {gettext("ABOUT")}
             </a>
-            <nav class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 p-0.5 text-xs">
-              <a
-                href={locale_path(@current_path, "ko")}
-                class={[
-                  "rounded-full px-3 py-1 transition",
-                  @locale == "ko" && "bg-white font-semibold text-slate-900 shadow-sm"
-                ]}
-              >
-                {gettext("GET STARTED")}
-              </a>
-            </nav>
           </nav>
+
+          <a
+            href={~p"/"}
+            class="inline-flex items-center rounded-full border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+          >
+            {gettext("Get Started")}
+          </a>
         </div>
       </header>
 
