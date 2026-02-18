@@ -39,7 +39,7 @@ defmodule MedigrandWeb.Layouts do
           <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
             <nav class="hidden items-center gap-6 text-sm font-medium text-slate-700 sm:flex">
               <a href={~p"/"}>{gettext("+82 28610902")}</a>
-              <a href={~p"/"}>{gettext("support@medigrand.com")}</a>
+              <a href={~p"/"}>{gettext("support@medigrant.com")}</a>
             </nav>
             <nav class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 p-0.5 text-xs">
               <a
@@ -65,8 +65,8 @@ defmodule MedigrandWeb.Layouts do
         </div>
         <div class="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href={~p"/"} class="inline-flex items-center gap-2">
-            <img src={~p"/images/logo.svg"} width="30" alt={gettext("Medigrand logo")} />
-            <span class="text-lg font-bold tracking-tight">{gettext("Medigrand")}</span>
+            <img src={~p"/images/logo.svg"} width="30" alt={gettext("Medigrant logo")} />
+            <span class="text-lg font-bold tracking-tight">{gettext("Medigrant")}</span>
           </a>
 
           <nav class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex">
@@ -157,13 +157,83 @@ defmodule MedigrandWeb.Layouts do
         </div>
       </header>
 
+      <section
+        :if={home_path?(@current_path)}
+        id="hero-slider"
+        phx-hook="HeroSlider"
+        class="hero-slider border-b border-slate-200/70"
+        aria-label={gettext("Featured highlights")}
+      >
+        <div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+          <div class="hero-slider__content">
+            <article class="hero-slide is-active" data-slide>
+              <p class="hero-slide__eyebrow">{gettext("Care Coordination")}</p>
+              <h1 class="hero-slide__title">{gettext("One Platform For Better Patient Access")}</h1>
+              <p class="hero-slide__body">
+                {gettext(
+                  "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
+                )}
+              </p>
+            </article>
+            <article class="hero-slide" data-slide>
+              <p class="hero-slide__eyebrow">{gettext("Clinic Productivity")}</p>
+              <h1 class="hero-slide__title">{gettext("Reduce Front Desk Admin Overhead")}</h1>
+              <p class="hero-slide__body">
+                {gettext(
+                  "Automate repetitive intake and scheduling tasks so staff can focus on patients."
+                )}
+              </p>
+            </article>
+            <article class="hero-slide" data-slide>
+              <p class="hero-slide__eyebrow">{gettext("Clinical Insights")}</p>
+              <h1 class="hero-slide__title">{gettext("Monitor Trends And Improve Outcomes")}</h1>
+              <p class="hero-slide__body">
+                {gettext(
+                  "Track appointment demand, follow-up rates, and service performance in real time."
+                )}
+              </p>
+            </article>
+          </div>
+
+          <div class="hero-slider__panel">
+            <p class="hero-slider__panel-kicker">{gettext("Trusted by growing clinics")}</p>
+            <p class="hero-slider__panel-copy">
+              {gettext("Built for bilingual patient journeys and operational consistency.")}
+            </p>
+            <div class="hero-slider__controls">
+              <button
+                type="button"
+                class="hero-slider__btn"
+                data-dir="prev"
+                aria-label={gettext("Previous slide")}
+              >
+                <.icon name="hero-chevron-left" class="size-4" />
+              </button>
+              <button
+                type="button"
+                class="hero-slider__btn"
+                data-dir="next"
+                aria-label={gettext("Next slide")}
+              >
+                <.icon name="hero-chevron-right" class="size-4" />
+              </button>
+            </div>
+            <div class="hero-slider__dots" aria-hidden="true">
+              <span class="hero-dot is-active" data-dot></span>
+              <span class="hero-dot" data-dot></span>
+              <span class="hero-dot" data-dot></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         {render_slot(@inner_block)}
       </main>
 
       <footer class="border-t border-slate-200 bg-white">
         <div class="mx-auto max-w-6xl px-4 py-6 text-sm text-slate-600 sm:px-6">
-          <p>{gettext("Medigrand foundation for bilingual telemedicine booking.")}</p>
+          <p>{gettext("Medigrant foundation for bilingual telemedicine booking.")}</p>
         </div>
       </footer>
     </div>
@@ -217,6 +287,15 @@ defmodule MedigrandWeb.Layouts do
 
   defp decode_query(nil), do: %{}
   defp decode_query(query), do: URI.decode_query(query)
+
+  defp home_path?(current_path) when is_binary(current_path) do
+    case URI.parse(current_path).path do
+      nil -> true
+      "" -> true
+      "/" -> true
+      _ -> false
+    end
+  end
 
   defp locale_path(current_path, locale) when is_binary(current_path) and is_binary(locale) do
     uri = URI.parse(current_path)

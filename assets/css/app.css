@@ -96,3 +96,122 @@ html,
 body {
   font-family: var(--font-sans-korean);
 }
+
+.hero-slider {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(16, 185, 129, 0.18), transparent 45%),
+    linear-gradient(125deg, #f7fffb 0%, #eefaf5 45%, #f8fffe 100%);
+}
+
+.hero-slider__content {
+  position: relative;
+  min-height: 16.5rem;
+}
+
+.hero-slide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transform: translateX(18px);
+  transition: opacity 320ms ease, transform 320ms ease;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+  transform: translateX(0);
+}
+
+.hero-slide__eyebrow {
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.hero-slide__title {
+  color: #0f172a;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 24ch;
+}
+
+.hero-slide__body {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-top: 0.9rem;
+  max-width: 56ch;
+}
+
+.hero-slider__panel {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+  padding: 1.1rem;
+}
+
+.hero-slider__panel-kicker {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hero-slider__panel-copy {
+  color: #334155;
+  font-size: 0.92rem;
+  margin-top: 0.45rem;
+}
+
+.hero-slider__controls {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.hero-slider__btn {
+  align-items: center;
+  background: #0f172a;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  height: 2rem;
+  transition: transform 160ms ease, background-color 160ms ease;
+  width: 2rem;
+}
+
+.hero-slider__btn:hover {
+  background: #0f766e;
+  transform: translateY(-1px);
+}
+
+.hero-slider__dots {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.hero-dot {
+  background: #94a3b8;
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.42rem;
+  opacity: 0.6;
+  transition: width 240ms ease, opacity 240ms ease, background-color 240ms ease;
+  width: 0.42rem;
+}
+
+.hero-dot.is-active {
+  background: #0f766e;
+  opacity: 1;
+  width: 1.35rem;
+}
