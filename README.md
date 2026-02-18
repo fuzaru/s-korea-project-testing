@@ -77,51 +77,33 @@ set -a; source .env; set +a
 mix test
 ```
 
-## Git Commands weh di nga
+## Git Commands
 
 ```bash
 
-# update main
-
-git checkout main
-git pull origin main --ff-only
-
-# create feature branch
-
-git checkout -b feat/123-login-button
+git checkout main # change branch
+git checkout -b .../... # create branch
 
 # work, commit, push
 
-git push -u origin feat/123-login-button
+git push -u origin .../...
+git pull origin main --ff-only
 
-# show current branch
+git rebase origin main # up to date main to branch
 
-git branch --show-current
-git status -sb
-
-# local branches
+# branches
 
 git branch
+git branch -r # remote
+git branch -a # local + remote
 
-# remote branches
+git branch -d branch- # delete local branch
+git branch -D branch-name # force delete if unmerged
 
-git branch -r
+git branch --show-current # show current branch
+git status -sb
 
-# all local + remote
-
-git branch -a
-
-# delete local branch
-
-git branch -d branch-name
-
-# force delete if unmerged
-
-git branch -D branch-name
-
-# delete remote branch (origin)
-
-git push origin --delete branch-name
+git push origin --delete branch-name # delete remote branch (origin)
 
 ```
 
