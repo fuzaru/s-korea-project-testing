@@ -77,7 +77,7 @@ set -a; source .env; set +a
 mix test
 ```
 
-## Git Commands
+## Git Commands weh di nga
 
 ```bash
 
