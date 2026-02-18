@@ -77,6 +77,54 @@ set -a; source .env; set +a
 mix test
 ```
 
+## Git Commands
+
+```bash
+
+# update main
+
+git checkout main
+git pull origin main --ff-only
+
+# create feature branch
+
+git checkout -b feat/123-login-button
+
+# work, commit, push
+
+git push -u origin feat/123-login-button
+
+# show current branch
+
+git branch --show-current
+git status -sb
+
+# local branches
+
+git branch
+
+# remote branches
+
+git branch -r
+
+# all local + remote
+
+git branch -a
+
+# delete local branch
+
+git branch -d branch-name
+
+# force delete if unmerged
+
+git branch -D branch-name
+
+# delete remote branch (origin)
+
+git push origin --delete branch-name
+
+```
+
 ## Quality Tooling (Installed In Repo)
 
 Project-local tooling is installed and versioned in `mix.exs`:
