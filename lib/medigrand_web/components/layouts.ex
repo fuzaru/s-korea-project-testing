@@ -140,7 +140,7 @@ defmodule MedigrandWeb.Layouts do
               <a
                 href={locale_path(@current_path, "ko")}
                 class={[
-                  "rounded-full px-3 py-1 transition",
+                  "rounded-full px-4 py-1 transition",
                   @locale == "ko" && "bg-white font-semibold text-slate-900 shadow-sm"
                 ]}
               >
