@@ -35,31 +35,118 @@ defmodule MedigrandWeb.Layouts do
     ~H"""
     <div class="min-h-screen">
       <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+        <div class="border-b border-slate-200/70">
+          <div class="mx-auto flex max-w-6xl items-center justify-end px-4 py-1.5 sm:px-6">
+            <nav class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 p-0.5 text-xs">
+              <a
+                href={locale_path(@current_path, "ko")}
+                class={[
+                  "rounded-full px-2.5 py-1 transition",
+                  @locale == "ko" && "bg-white font-semibold text-slate-900 shadow-sm"
+                ]}
+              >
+                {gettext("한국어")}
+              </a>
+              <a
+                href={locale_path(@current_path, "en")}
+                class={[
+                  "rounded-full px-2.5 py-1 transition",
+                  @locale == "en" && "bg-white font-semibold text-slate-900 shadow-sm"
+                ]}
+              >
+                {gettext("English")}
+              </a>
+            </nav>
+          </div>
+        </div>
         <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href={~p"/"} class="inline-flex items-center gap-2">
             <img src={~p"/images/logo.svg"} width="30" alt={gettext("Medigrand logo")} />
             <span class="text-lg font-bold tracking-tight">{gettext("Medigrand")}</span>
           </a>
 
-          <nav class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 p-1 text-sm">
-            <a
-              href={locale_path(@current_path, "ko")}
-              class={[
-                "rounded-full px-3 py-1.5 transition",
-                @locale == "ko" && "bg-white font-semibold text-slate-900 shadow-sm"
-              ]}
-            >
-              {gettext("한국어")}
+          <nav class="hidden items-center gap-6 sm:flex">
+            <a href={~p"/"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
+              {gettext("HOME")}
             </a>
-            <a
-              href={locale_path(@current_path, "en")}
-              class={[
-                "rounded-full px-3 py-1.5 transition",
-                @locale == "en" && "bg-white font-semibold text-slate-900 shadow-sm"
-              ]}
-            >
-              {gettext("English")}
+            <a href={~p"/doctors"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
+              {gettext("DOCTORS")}
             </a>
+            <div class="group relative">
+              <button
+                type="button"
+                class="inline-flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-slate-900"
+              >
+                {gettext("SERVICES")}
+                <.icon name="hero-chevron-down" class="size-4" />
+              </button>
+              <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
+                <a
+                  href={~p"/services/consultations"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("CONSULTATIONS")}
+                </a>
+                <a
+                  href={~p"/services/care-programs"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("CARE PROGRAMS")}
+                </a>
+                <a
+                  href={~p"/services/telemedicine"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("TELEMEDICINE")}
+                </a>
+              </div>
+            </div>
+            <div class="group relative">
+              <button
+                type="button"
+                class="inline-flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-slate-900"
+              >
+                {gettext("RESOURCES")}
+                <.icon name="hero-chevron-down" class="size-4" />
+              </button>
+              <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
+                <a
+                  href={~p"/resources/blog"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("BLOG")}
+                </a>
+                <a
+                  href={~p"/resources/guides"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("GUIDES")}
+                </a>
+                <a
+                  href={~p"/resources/faq"}
+                  class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
+                >
+                  {gettext("FAQ")}
+                </a>
+              </div>
+            </div>
+            <a
+              href={~p"/about"}
+              class="text-sm font-medium text-slate-700 hover:text-slate-900"
+            >
+              {gettext("ABOUT")}
+            </a>
+            <nav class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 p-0.5 text-xs">
+              <a
+                href={locale_path(@current_path, "ko")}
+                class={[
+                  "rounded-full px-3 py-1 transition",
+                  @locale == "ko" && "bg-white font-semibold text-slate-900 shadow-sm"
+                ]}
+              >
+                {gettext("GET STARTED")}
+              </a>
+            </nav>
           </nav>
         </div>
       </header>
