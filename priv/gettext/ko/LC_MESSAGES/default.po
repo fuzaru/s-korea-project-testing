@@ -7,29 +7,104 @@ msgstr ""
 msgid "Browse doctors"
 msgstr "의료진 둘러보기"
 
+msgid "Built for bilingual patient journeys and operational consistency."
+msgstr "이중 언어 환자 여정과 안정적인 운영을 위해 설계되었습니다."
+
+msgid "CARE PROGRAMS"
+msgstr "케어 프로그램"
+
+msgid "Clinical Insights"
+msgstr "임상 인사이트"
+
+msgid "Clinic Productivity"
+msgstr "클리닉 생산성"
+
+msgid "CONSULTATIONS"
+msgstr "진료 상담"
+
+msgid "Care Coordination"
+msgstr "진료 연계"
+
+msgid "DOCTORS"
+msgstr "의료진"
+
 msgid "English"
 msgstr "English"
+
+msgid "FAQ"
+msgstr "자주 묻는 질문"
+
+msgid "Featured highlights"
+msgstr "주요 소개"
+
+msgid "Get Started"
+msgstr "시작하기"
+
+msgid "GUIDES"
+msgstr "가이드"
+
+msgid "HOME"
+msgstr "홈"
+
+msgid "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
+msgstr "다국어 예약, 알림, 원격진료를 하나의 워크플로우에서 처리하세요."
 
 msgid "Korean-first scheduling foundation for white-label telemedicine portals."
 msgstr "화이트라벨 원격진료 포털을 위한 한국어 중심 예약 기반입니다."
 
-msgid "Medigrand"
-msgstr "Medigrand"
+msgid "Medigrant"
+msgstr "Medigrant"
 
-msgid "Medigrand foundation for bilingual telemedicine booking."
-msgstr "이중 언어 원격진료 예약을 위한 Medigrand 기반입니다."
+msgid "Medigrant foundation for bilingual telemedicine booking."
+msgstr "이중 언어 원격진료 예약을 위한 Medigrant 기반입니다."
 
-msgid "Medigrand logo"
-msgstr "Medigrand 로고"
+msgid "Medigrant logo"
+msgstr "Medigrant 로고"
+
+msgid "Monitor Trends And Improve Outcomes"
+msgstr "추세를 파악하고 진료 성과를 개선하세요"
+
+msgid "Next slide"
+msgstr "다음 슬라이드"
+
+msgid "One Platform For Better Patient Access"
+msgstr "더 나은 환자 접근성을 위한 단일 플랫폼"
+
+msgid "Previous slide"
+msgstr "이전 슬라이드"
+
+msgid "Reduce Front Desk Admin Overhead"
+msgstr "접수 데스크의 행정 부담을 줄이세요"
 
 msgid "Start booking flow"
 msgstr "예약 시작하기"
 
+msgid "SERVICES"
+msgstr "서비스"
+
+msgid "TELEMEDICINE"
+msgstr "원격진료"
+
 msgid "Telemedicine"
 msgstr "원격진료"
 
+msgid "Track appointment demand, follow-up rates, and service performance in real time."
+msgstr "예약 수요, 재진율, 서비스 성과를 실시간으로 추적하세요."
+
+msgid "Trusted by growing clinics"
+msgstr "성장 중인 클리닉이 신뢰하는 서비스"
+
 msgid "Trusted telemedicine booking for clinics and hospitals"
 msgstr "병원과 의원을 위한 신뢰할 수 있는 원격진료 예약"
+
+msgid "ABOUT"
+msgstr "회사 소개"
+
+msgid "BLOG"
+msgstr "블로그"
+
+msgid "RESOURCES"
+msgstr "자료실"
 
 msgid "한국어"
 msgstr "한국어"

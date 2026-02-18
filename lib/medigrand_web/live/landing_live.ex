@@ -1,6 +1,6 @@
 defmodule MedigrandWeb.LandingLive do
   @moduledoc """
-  Public landing page for Medigrand.
+  Public landing page for Medigrant.
   """
   use MedigrandWeb, :live_view
 
@@ -23,7 +23,7 @@ defmodule MedigrandWeb.LandingLive do
           {gettext("Trusted telemedicine booking for clinics and hospitals")}
         </p>
         <h1 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          {gettext("Medigrand")}
+          {gettext("Medigrant")}
         </h1>
         <p class="mt-4 max-w-2xl text-base text-slate-700">
           {gettext("Korean-first scheduling foundation for white-label telemedicine portals.")}

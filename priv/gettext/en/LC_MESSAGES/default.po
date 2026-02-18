@@ -7,29 +7,104 @@ msgstr ""
 msgid "Browse doctors"
 msgstr "Browse doctors"
 
+msgid "Built for bilingual patient journeys and operational consistency."
+msgstr "Built for bilingual patient journeys and operational consistency."
+
+msgid "CARE PROGRAMS"
+msgstr "CARE PROGRAMS"
+
+msgid "Clinical Insights"
+msgstr "Clinical Insights"
+
+msgid "Clinic Productivity"
+msgstr "Clinic Productivity"
+
+msgid "CONSULTATIONS"
+msgstr "CONSULTATIONS"
+
+msgid "Care Coordination"
+msgstr "Care Coordination"
+
+msgid "DOCTORS"
+msgstr "DOCTORS"
+
 msgid "English"
 msgstr "English"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Featured highlights"
+msgstr "Featured highlights"
+
+msgid "Get Started"
+msgstr "Get Started"
+
+msgid "GUIDES"
+msgstr "GUIDES"
+
+msgid "HOME"
+msgstr "HOME"
+
+msgid "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
+msgstr "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
 
 msgid "Korean-first scheduling foundation for white-label telemedicine portals."
 msgstr "Korean-first scheduling foundation for white-label telemedicine portals."
 
-msgid "Medigrand"
-msgstr "Medigrand"
+msgid "Medigrant"
+msgstr "Medigrant"
 
-msgid "Medigrand foundation for bilingual telemedicine booking."
-msgstr "Medigrand foundation for bilingual telemedicine booking."
+msgid "Medigrant foundation for bilingual telemedicine booking."
+msgstr "Medigrant foundation for bilingual telemedicine booking."
 
-msgid "Medigrand logo"
-msgstr "Medigrand logo"
+msgid "Medigrant logo"
+msgstr "Medigrant logo"
+
+msgid "Monitor Trends And Improve Outcomes"
+msgstr "Monitor Trends And Improve Outcomes"
+
+msgid "Next slide"
+msgstr "Next slide"
+
+msgid "One Platform For Better Patient Access"
+msgstr "One Platform For Better Patient Access"
+
+msgid "Previous slide"
+msgstr "Previous slide"
+
+msgid "Reduce Front Desk Admin Overhead"
+msgstr "Reduce Front Desk Admin Overhead"
 
 msgid "Start booking flow"
 msgstr "Start booking flow"
 
+msgid "SERVICES"
+msgstr "SERVICES"
+
+msgid "TELEMEDICINE"
+msgstr "TELEMEDICINE"
+
 msgid "Telemedicine"
 msgstr "Telemedicine"
 
+msgid "Track appointment demand, follow-up rates, and service performance in real time."
+msgstr "Track appointment demand, follow-up rates, and service performance in real time."
+
+msgid "Trusted by growing clinics"
+msgstr "Trusted by growing clinics"
+
 msgid "Trusted telemedicine booking for clinics and hospitals"
 msgstr "Trusted telemedicine booking for clinics and hospitals"
+
+msgid "ABOUT"
+msgstr "ABOUT"
+
+msgid "BLOG"
+msgstr "BLOG"
+
+msgid "RESOURCES"
+msgstr "RESOURCES"
 
 msgid "한국어"
 msgstr "Korean"
