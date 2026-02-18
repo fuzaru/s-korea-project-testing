@@ -168,6 +168,26 @@ mix setup
 mix phx.server
 ```
 
+## If password authentication failed for user "postgres" (Another Fix)
+
+1. Run in project directory
+
+```bash
+mix ecto.create
+```
+
+2. Run compile
+
+```bash
+mix compile
+```
+
+3. Run server
+
+```bash
+mix phx.server
+```
+
 ## Configuration Model
 
 - `config/dev.exs` reads DB values from:
