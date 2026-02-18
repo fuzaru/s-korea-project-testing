@@ -69,7 +69,7 @@ defmodule MedigrandWeb.Layouts do
             <a href={~p"/"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
               {gettext("HOME")}
             </a>
-            <a href={~p"/doctors"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
+            <a href={~p"/"} class="text-sm font-medium text-slate-700 hover:text-slate-900">
               {gettext("DOCTORS")}
             </a>
             <div class="group relative">
@@ -82,19 +82,19 @@ defmodule MedigrandWeb.Layouts do
               </button>
               <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
                 <a
-                  href={~p"/services/consultations"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("CONSULTATIONS")}
                 </a>
                 <a
-                  href={~p"/services/care-programs"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("CARE PROGRAMS")}
                 </a>
                 <a
-                  href={~p"/services/telemedicine"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("TELEMEDICINE")}
@@ -111,19 +111,19 @@ defmodule MedigrandWeb.Layouts do
               </button>
               <div class="absolute left-0 top-full mt-2 hidden w-56 rounded-lg border border-slate-200 bg-white shadow-lg ring-1 ring-slate-200/60 group-hover:block group-focus-within:block">
                 <a
-                  href={~p"/resources/blog"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("BLOG")}
                 </a>
                 <a
-                  href={~p"/resources/guides"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("GUIDES")}
                 </a>
                 <a
-                  href={~p"/resources/faq"}
+                  href={~p"/"}
                   class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
                 >
                   {gettext("FAQ")}
@@ -131,7 +131,7 @@ defmodule MedigrandWeb.Layouts do
               </div>
             </div>
             <a
-              href={~p"/about"}
+              href={~p"/"}
               class="text-sm font-medium text-slate-700 hover:text-slate-900"
             >
               {gettext("ABOUT")}
