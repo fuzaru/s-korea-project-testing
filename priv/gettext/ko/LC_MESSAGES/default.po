@@ -4,158 +4,409 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Browse doctors"
-msgstr "의료진 둘러보기"
+#: lib/medigrand_web/components/layouts.ex:37
+#, elixir-autogen, elixir-format
+msgid "+82 28610902"
+msgstr ""
 
-msgid "Built for bilingual patient journeys and operational consistency."
-msgstr "이중 언어 환자 여정과 안정적인 운영을 위해 설계되었습니다."
+#: lib/medigrand_web/live/create_account_live.ex:58
+#, elixir-autogen, elixir-format
+msgid "1234-5678"
+msgstr "1234-5678"
 
+#: lib/medigrand_web/live/landing_live.ex:30
+#, elixir-autogen, elixir-format
 msgid "40% Off First Telemedicine Visit"
 msgstr "첫 원격진료 방문 40% 할인"
 
-msgid "Advertisement highlights"
-msgstr "광고 하이라이트"
-
-msgid "Automate repetitive intake and scheduling tasks so staff can focus on patients."
-msgstr "반복되는 접수 및 예약 업무를 자동화해 직원이 환자에게 더 집중할 수 있도록 하세요."
-
-msgid "Bilingual Care Team On Standby"
-msgstr "대기 중인 이중 언어 케어팀"
-
-msgid "Book Appointment Now"
-msgstr "지금 예약하기"
-
-msgid "CARE PROGRAMS"
-msgstr "케어 프로그램"
-
-msgid "Clinical Insights"
-msgstr "임상 인사이트"
-
-msgid "Clinic Productivity"
-msgstr "클리닉 생산성"
-
-msgid "CONSULTATIONS"
-msgstr "진료 상담"
-
-msgid "Coordinate follow-ups for your family and receive reminders in one place."
-msgstr "가족의 후속 진료를 한 곳에서 관리하고 알림도 함께 받아보세요."
-
-msgid "Care Coordination"
-msgstr "진료 연계"
-
-msgid "DOCTORS"
-msgstr "의료진"
-
-msgid "English"
-msgstr "English"
-
-msgid "Expanded Weekend Availability"
-msgstr "주말 진료 가능 시간 확대"
-
-msgid "FAQ"
-msgstr "자주 묻는 질문"
-
-msgid "Family Plan"
-msgstr "가족 플랜"
-
-msgid "Featured Offer"
-msgstr "추천 혜택"
-
-msgid "Featured highlights"
-msgstr "주요 소개"
-
-msgid "Find nearby clinics with evening and weekend telemedicine slots."
-msgstr "저녁 및 주말 원격진료가 가능한 가까운 클리닉을 찾아보세요."
-
-msgid "Get Started"
-msgstr "시작하기"
-
-msgid "Get booking help in Korean or English from our patient support specialists."
-msgstr "환자 지원 전문팀이 한국어와 영어로 예약을 도와드립니다."
-
-msgid "GUIDES"
-msgstr "가이드"
-
-msgid "Group Appointments In One Dashboard"
-msgstr "하나의 대시보드에서 그룹 예약 관리"
-
-msgid "HOME"
-msgstr "홈"
-
-msgid "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
-msgstr "다국어 예약, 알림, 원격진료를 하나의 워크플로우에서 처리하세요."
-
-msgid "Korean-first scheduling foundation for white-label telemedicine portals."
-msgstr "화이트라벨 원격진료 포털을 위한 한국어 중심 예약 기반입니다."
-
-msgid "Medigrant"
-msgstr "Medigrant"
-
-msgid "Medigrant foundation for bilingual telemedicine booking."
-msgstr "이중 언어 원격진료 예약을 위한 Medigrant 기반입니다."
-
-msgid "Medigrant logo"
-msgstr "Medigrant 로고"
-
-msgid "New Clinics"
-msgstr "신규 클리닉"
-
-msgid "Next ad"
-msgstr "다음 광고"
-
-msgid "Monitor Trends And Improve Outcomes"
-msgstr "추세를 파악하고 진료 성과를 개선하세요"
-
-msgid "Next slide"
-msgstr "다음 슬라이드"
-
-msgid "One Platform For Better Patient Access"
-msgstr "더 나은 환자 접근성을 위한 단일 플랫폼"
-
-msgid "Previous slide"
-msgstr "이전 슬라이드"
-
-msgid "Previous ad"
-msgstr "이전 광고"
-
-msgid "Priority Support"
-msgstr "우선 지원"
-
-msgid "Reduce Front Desk Admin Overhead"
-msgstr "접수 데스크의 행정 부담을 줄이세요"
-
-msgid "Start booking flow"
-msgstr "예약 시작하기"
-
-msgid "SERVICES"
-msgstr "서비스"
-
-msgid "Start your care journey with faster booking and lower first-visit costs this month."
-msgstr "더 빠른 예약과 첫 방문 비용 할인으로 이번 달 진료 여정을 시작하세요."
-
-msgid "TELEMEDICINE"
-msgstr "원격진료"
-
-msgid "Telemedicine"
-msgstr "원격진료"
-
-msgid "Track appointment demand, follow-up rates, and service performance in real time."
-msgstr "예약 수요, 재진율, 서비스 성과를 실시간으로 추적하세요."
-
-msgid "Trusted by growing clinics"
-msgstr "성장 중인 클리닉이 신뢰하는 서비스"
-
-msgid "Trusted telemedicine booking for clinics and hospitals"
-msgstr "병원과 의원을 위한 신뢰할 수 있는 원격진료 예약"
-
+#: lib/medigrand_web/components/layouts.ex:143
+#, elixir-autogen, elixir-format
 msgid "ABOUT"
 msgstr "회사 소개"
 
+#: lib/medigrand_web/components/core_components.ex:367
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/medigrand_web/live/landing_live.ex:25
+#, elixir-autogen, elixir-format
+msgid "Advertisement highlights"
+msgstr "광고 하이라이트"
+
+#: lib/medigrand_web/live/create_account_live.ex:123
+#, elixir-autogen, elixir-format
+msgid "Already have an account?"
+msgstr "이미 계정이 있으신가요?"
+
+#: lib/medigrand_web/components/layouts.ex:283
+#: lib/medigrand_web/components/layouts.ex:295
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr ""
+
+#: lib/medigrand_web/components/layouts.ex:184
+#, elixir-autogen, elixir-format
+msgid "Automate repetitive intake and scheduling tasks so staff can focus on patients."
+msgstr "반복되는 접수 및 예약 업무를 자동화해 직원이 환자에게 더 집중할 수 있도록 하세요."
+
+#: lib/medigrand_web/components/layouts.ex:123
+#, elixir-autogen, elixir-format
 msgid "BLOG"
 msgstr "블로그"
 
+#: lib/medigrand_web/live/landing_live.ex:56
+#, elixir-autogen, elixir-format
+msgid "Bilingual Care Team On Standby"
+msgstr "대기 중인 이중 언어 케어팀"
+
+#: lib/medigrand_web/components/layouts.ex:177
+#: lib/medigrand_web/components/layouts.ex:192
+#: lib/medigrand_web/components/layouts.ex:207
+#, elixir-autogen, elixir-format
+msgid "Book Appointment Now"
+msgstr "지금 예약하기"
+
+#: lib/medigrand_web/components/layouts.ex:215
+#, elixir-autogen, elixir-format
+msgid "Built for bilingual patient journeys and operational consistency."
+msgstr "이중 언어 환자 여정과 안정적인 운영을 위해 설계되었습니다."
+
+#: lib/medigrand_web/components/layouts.ex:100
+#, elixir-autogen, elixir-format
+msgid "CARE PROGRAMS"
+msgstr "케어 프로그램"
+
+#: lib/medigrand_web/components/layouts.ex:94
+#, elixir-autogen, elixir-format
+msgid "CONSULTATIONS"
+msgstr "진료 상담"
+
+#: lib/medigrand_web/components/layouts.ex:166
+#, elixir-autogen, elixir-format
+msgid "Care Coordination"
+msgstr "진료 연계"
+
+#: lib/medigrand_web/components/layouts.ex:181
+#, elixir-autogen, elixir-format
+msgid "Clinic Productivity"
+msgstr "클리닉 생산성"
+
+#: lib/medigrand_web/components/layouts.ex:196
+#, elixir-autogen, elixir-format
+msgid "Clinical Insights"
+msgstr "임상 인사이트"
+
+#: lib/medigrand_web/live/landing_live.ex:42
+#, elixir-autogen, elixir-format
+msgid "Coordinate follow-ups for your family and receive reminders in one place."
+msgstr "가족의 후속 진료를 한 곳에서 관리하고 알림도 함께 받아보세요."
+
+#: lib/medigrand_web/live/create_account_live.ex:23
+#: lib/medigrand_web/live/create_account_live.ex:118
+#: lib/medigrand_web/live/login_live.ex:57
+#, elixir-autogen, elixir-format
+msgid "Create Account"
+msgstr "계정 만들기"
+
+#: lib/medigrand_web/components/layouts.ex:79
+#, elixir-autogen, elixir-format
+msgid "DOCTORS"
+msgstr "의료진"
+
+#: lib/medigrand_web/live/create_account_live.ex:92
+#, elixir-autogen, elixir-format
+msgid "Date of Birth"
+msgstr "생년월일"
+
+#: lib/medigrand_web/live/landing_live.ex:94
+#, elixir-autogen, elixir-format
+msgid "Did Medigrant help you?"
+msgstr ""
+
+#: lib/medigrand_web/live/create_account_live.ex:31
+#: lib/medigrand_web/live/create_account_live.ex:73
+#: lib/medigrand_web/live/create_account_live.ex:82
+#: lib/medigrand_web/live/login_live.ex:29
+#, elixir-autogen, elixir-format
+msgid "Email"
+msgstr "이메일"
+
+#: lib/medigrand_web/components/layouts.ex:57
+#, elixir-autogen, elixir-format
+msgid "English"
+msgstr "English"
+
+#: lib/medigrand_web/live/landing_live.ex:48
+#, elixir-autogen, elixir-format
+msgid "Expanded Weekend Availability"
+msgstr "주말 진료 가능 시간 확대"
+
+#: lib/medigrand_web/components/layouts.ex:135
+#, elixir-autogen, elixir-format
+msgid "FAQ"
+msgstr "자주 묻는 질문"
+
+#: lib/medigrand_web/live/landing_live.ex:39
+#, elixir-autogen, elixir-format
+msgid "Family Plan"
+msgstr "가족 플랜"
+
+#: lib/medigrand_web/live/landing_live.ex:29
+#, elixir-autogen, elixir-format
+msgid "Featured Offer"
+msgstr "추천 혜택"
+
+#: lib/medigrand_web/components/layouts.ex:161
+#, elixir-autogen, elixir-format
+msgid "Featured highlights"
+msgstr "주요 소개"
+
+#: lib/medigrand_web/live/create_account_live.ex:108
+#, elixir-autogen, elixir-format
+msgid "Female"
+msgstr "여성"
+
+#: lib/medigrand_web/live/landing_live.ex:50
+#, elixir-autogen, elixir-format
+msgid "Find nearby clinics with evening and weekend telemedicine slots."
+msgstr "저녁 및 주말 원격진료가 가능한 가까운 클리닉을 찾아보세요."
+
+#: lib/medigrand_web/live/create_account_live.ex:77
+#, elixir-autogen, elixir-format
+msgid "First Name"
+msgstr "이름"
+
+#: lib/medigrand_web/components/layouts.ex:129
+#, elixir-autogen, elixir-format
+msgid "GUIDES"
+msgstr "가이드"
+
+#: lib/medigrand_web/components/layouts.ex:151
+#, elixir-autogen, elixir-format
+msgid "Get Started"
+msgstr "시작하기"
+
+#: lib/medigrand_web/live/landing_live.ex:58
+#, elixir-autogen, elixir-format
+msgid "Get booking help in Korean or English from our patient support specialists."
+msgstr "환자 지원 전문팀이 한국어와 영어로 예약을 도와드립니다."
+
+#: lib/medigrand_web/live/landing_live.ex:104
+#, elixir-autogen, elixir-format
+msgid "Great experience overall. The process felt simple and stress-free."
+msgstr ""
+
+#: lib/medigrand_web/live/landing_live.ex:40
+#, elixir-autogen, elixir-format
+msgid "Group Appointments In One Dashboard"
+msgstr "하나의 대시보드에서 그룹 예약 관리"
+
+#: lib/medigrand_web/components/layouts.ex:73
+#, elixir-autogen, elixir-format
+msgid "HOME"
+msgstr "홈"
+
+#: lib/medigrand_web/components/layouts.ex:169
+#, elixir-autogen, elixir-format
+msgid "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
+msgstr "다국어 예약, 알림, 원격진료를 하나의 워크플로우에서 처리하세요."
+
+#: lib/medigrand_web/live/landing_live.ex:132
+#, elixir-autogen, elixir-format
+msgid "I was able to find a doctor quickly and book in less than five minutes."
+msgstr ""
+
+#: lib/medigrand_web/live/create_account_live.ex:86
+#, elixir-autogen, elixir-format
+msgid "Last Name"
+msgstr "성"
+
+#: lib/medigrand_web/live/create_account_live.ex:125
+#: lib/medigrand_web/live/login_live.ex:50
+#, elixir-autogen, elixir-format
+msgid "Log In"
+msgstr "로그인"
+
+#: lib/medigrand_web/live/create_account_live.ex:109
+#, elixir-autogen, elixir-format
+msgid "Male"
+msgstr "남성"
+
+#: lib/medigrand_web/components/layouts.ex:65
+#: lib/medigrand_web/components/layouts/root.html.heex:7
+#, elixir-autogen, elixir-format
+msgid "Medigrant"
+msgstr "Medigrant"
+
+#: lib/medigrand_web/components/layouts.ex:250
+#, elixir-autogen, elixir-format
+msgid "Medigrant foundation for bilingual telemedicine booking."
+msgstr "이중 언어 원격진료 예약을 위한 Medigrant 기반입니다."
+
+#: lib/medigrand_web/components/layouts.ex:64
+#, elixir-autogen, elixir-format
+msgid "Medigrant logo"
+msgstr "Medigrant 로고"
+
+#: lib/medigrand_web/live/create_account_live.ex:41
+#, elixir-autogen, elixir-format
+msgid "Mobile Number"
+msgstr "휴대폰 번호"
+
+#: lib/medigrand_web/components/layouts.ex:197
+#, elixir-autogen, elixir-format
+msgid "Monitor Trends And Improve Outcomes"
+msgstr "추세를 파악하고 진료 성과를 개선하세요"
+
+#: lib/medigrand_web/live/landing_live.ex:47
+#, elixir-autogen, elixir-format
+msgid "New Clinics"
+msgstr "신규 클리닉"
+
+#: lib/medigrand_web/live/landing_live.ex:77
+#, elixir-autogen, elixir-format
+msgid "Next ad"
+msgstr "다음 광고"
+
+#: lib/medigrand_web/components/layouts.ex:230
+#, elixir-autogen, elixir-format
+msgid "Next slide"
+msgstr "다음 슬라이드"
+
+#: lib/medigrand_web/live/login_live.ex:55
+#, elixir-autogen, elixir-format
+msgid "No Account Yet?"
+msgstr "아직 계정이 없으신가요?"
+
+#: lib/medigrand_web/components/layouts.ex:167
+#, elixir-autogen, elixir-format
+msgid "One Platform For Better Patient Access"
+msgstr "더 나은 환자 접근성을 위한 단일 플랫폼"
+
+#: lib/medigrand_web/live/create_account_live.ex:110
+#, elixir-autogen, elixir-format
+msgid "Other"
+msgstr "기타"
+
+#: lib/medigrand_web/live/create_account_live.ex:64
+#: lib/medigrand_web/live/login_live.ex:38
+#, elixir-autogen, elixir-format
+msgid "Password"
+msgstr "비밀번호"
+
+#: lib/medigrand_web/live/landing_live.ex:69
+#, elixir-autogen, elixir-format
+msgid "Previous ad"
+msgstr "이전 광고"
+
+#: lib/medigrand_web/components/layouts.ex:222
+#, elixir-autogen, elixir-format
+msgid "Previous slide"
+msgstr "이전 슬라이드"
+
+#: lib/medigrand_web/live/landing_live.ex:55
+#, elixir-autogen, elixir-format
+msgid "Priority Support"
+msgstr "우선 지원"
+
+#: lib/medigrand_web/components/layouts.ex:115
+#, elixir-autogen, elixir-format
 msgid "RESOURCES"
 msgstr "자료실"
 
+#: lib/medigrand_web/components/layouts.ex:182
+#, elixir-autogen, elixir-format
+msgid "Reduce Front Desk Admin Overhead"
+msgstr "접수 데스크의 행정 부담을 줄이세요"
+
+#: lib/medigrand_web/components/layouts.ex:86
+#, elixir-autogen, elixir-format
+msgid "SERVICES"
+msgstr "서비스"
+
+#: lib/medigrand_web/live/create_account_live.ex:26
+#, elixir-autogen, elixir-format
+msgid "Set up your profile to start booking and managing appointments."
+msgstr "예약과 일정 관리를 시작할 수 있도록 프로필을 설정하세요."
+
+#: lib/medigrand_web/live/create_account_live.ex:102
+#, elixir-autogen, elixir-format
+msgid "Sex"
+msgstr "성별"
+
+#: lib/medigrand_web/live/login_live.ex:24
+#, elixir-autogen, elixir-format
+msgid "Sign in to continue your booking and clinic dashboard access."
+msgstr "예약과 클리닉 대시보드 이용을 계속하려면 로그인하세요."
+
+#: lib/medigrand_web/components/layouts.ex:290
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr ""
+
+#: lib/medigrand_web/live/landing_live.ex:32
+#, elixir-autogen, elixir-format
+msgid "Start your care journey with faster booking and lower first-visit costs this month."
+msgstr "더 빠른 예약과 첫 방문 비용 할인으로 이번 달 진료 여정을 시작하세요."
+
+#: lib/medigrand_web/components/layouts.ex:106
+#, elixir-autogen, elixir-format
+msgid "TELEMEDICINE"
+msgstr "원격진료"
+
+#: lib/medigrand_web/components/layouts/root.html.heex:7
+#, elixir-autogen, elixir-format
+msgid "Telemedicine"
+msgstr "원격진료"
+
+#: lib/medigrand_web/live/landing_live.ex:117
+#, elixir-autogen, elixir-format
+msgid "This platform made booking so easy, and the reminders helped me never miss an appointment."
+msgstr ""
+
+#: lib/medigrand_web/components/layouts.ex:199
+#, elixir-autogen, elixir-format
+msgid "Track appointment demand, follow-up rates, and service performance in real time."
+msgstr "예약 수요, 재진율, 서비스 성과를 실시간으로 추적하세요."
+
+#: lib/medigrand_web/components/layouts.ex:213
+#, elixir-autogen, elixir-format
+msgid "Trusted by growing clinics"
+msgstr "성장 중인 클리닉이 신뢰하는 서비스"
+
+#: lib/medigrand_web/components/layouts.ex:278
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr ""
+
+#: lib/medigrand_web/live/landing_live.ex:97
+#, elixir-autogen, elixir-format
+msgid "We take care of our patients with reliable booking, reminders, and support."
+msgstr ""
+
+#: lib/medigrand_web/live/login_live.ex:22
+#, elixir-autogen, elixir-format
+msgid "Welcome Back"
+msgstr "다시 오신 것을 환영합니다"
+
+#: lib/medigrand_web/components/core_components.ex:75
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr ""
+
+#: lib/medigrand_web/components/layouts.ex:38
+#, elixir-autogen, elixir-format
+msgid "support@medigrant.com"
+msgstr ""
+
+#: lib/medigrand_web/live/create_account_live.ex:35
+#: lib/medigrand_web/live/login_live.ex:33
+#, elixir-autogen, elixir-format
+msgid "you@example.com"
+msgstr "you@example.com"
+
+#: lib/medigrand_web/components/layouts.ex:48
+#, elixir-autogen, elixir-format
 msgid "한국어"
 msgstr "한국어"
