@@ -29,7 +29,7 @@ defmodule MedigrandWeb.LoginLive do
             <span class="mb-1 block text-sm font-medium text-slate-700">{gettext("Email")}</span>
             <input
               type="email"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-emerald-500"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-emerald-500"
               placeholder={gettext("you@example.com")}
             />
           </label>
@@ -38,7 +38,7 @@ defmodule MedigrandWeb.LoginLive do
             <span class="mb-1 block text-sm font-medium text-slate-700">{gettext("Password")}</span>
             <input
               type="password"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-emerald-500"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-emerald-500"
               placeholder="********"
             />
           </label>
