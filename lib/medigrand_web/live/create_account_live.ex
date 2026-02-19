@@ -19,8 +19,10 @@ defmodule MedigrandWeb.CreateAccountLive do
     ~H"""
     <Layouts.app flash={@flash} locale={@locale} current_path={@current_path}>
       <section class="ml-auto mr-0 max-w-md rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
-        <h1 class="text-2xl font-bold tracking-tight text-slate-900">{gettext("Create Account")}</h1>
-        <p class="mt-2 text-sm text-slate-600">
+        <h1 class="text-2xl font-bold tracking-tight text-center text-slate-900">
+          {gettext("Create Account")}
+        </h1>
+        <p class="mt-2 text-sm text-justify text-slate-600">
           {gettext("Set up your profile to start booking and managing appointments.")}
         </p>
 
