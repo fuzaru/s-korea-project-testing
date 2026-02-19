@@ -25,6 +25,7 @@ defmodule MedigrandWeb.Layouts do
   attr :locale, :string, default: "ko"
   attr :current_path, :string, default: "/"
   attr :show_nav, :boolean, default: true
+  attr :minimal_nav, :boolean, default: false
 
   slot :inner_block, required: true
 
@@ -69,7 +70,10 @@ defmodule MedigrandWeb.Layouts do
             <span class="text-lg font-bold tracking-tight">{gettext("Medigrant")}</span>
           </a>
 
-          <nav class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex">
+          <nav
+            :if={!@minimal_nav}
+            class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex"
+          >
             <a
               href={~p"/"}
               class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
@@ -149,6 +153,7 @@ defmodule MedigrandWeb.Layouts do
           </nav>
 
           <a
+            :if={!@minimal_nav}
             href={~p"/login"}
             class="inline-flex items-center rounded-full border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
           >
