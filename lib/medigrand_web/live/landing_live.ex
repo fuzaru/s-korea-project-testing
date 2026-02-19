@@ -44,6 +44,49 @@ defmodule MedigrandWeb.LandingLive do
           </a>
         </div>
       </section>
+      <section class="mt-8 grid gap-3 sm:grid-cols-1 lg:grid-cols-3">
+        <article class="relative rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 pr-16 ring-2 ring-emerald-200 min-h-[320px]">
+          <h3 class="text-5xl font-semibold text-black">“</h3>
+          <p class="mt-4 text-sm text-slate-700 text-justify">
+            {gettext("Great experience overall. The process felt simple and stress-free.")}
+          </p>
+          <a
+            href="#"
+            class="absolute bottom-5 left-5 inline-block h-10 w-10 rounded-full border-2 border-black"
+            aria-hidden="true"
+          >
+          </a>
+        </article>
+
+        <article class="relative rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 pr-16 ring-2 ring-emerald-200 min-h-[320px]">
+          <h3 class="text-5xl font-semibold text-black">“</h3>
+          <p class="mt-4 text-sm text-slate-700 text-justify">
+            {gettext(
+              "This platform made booking so easy, and the reminders helped me never miss an appointment."
+            )}
+          </p>
+          <a
+            href="#"
+            class="absolute bottom-5 left-5 inline-block h-10 w-10 rounded-full border-2 border-black"
+            aria-hidden="true"
+          >
+          </a>
+        </article>
+
+        <article class="relative rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 pr-16 ring-2 ring-emerald-200 min-h-[320px]">
+          <h3 class="text-5xl font-semibold text-black">“</h3>
+          <p class="mt-4 text-sm text-slate-700 text-justify">
+            {gettext("I was able to find a doctor quickly and book in less than five minutes.")}
+          </p>
+
+          <a
+            href="#"
+            class="absolute bottom-5 left-5 inline-block h-10 w-10 rounded-full border-2 border-black"
+            aria-hidden="true"
+          >
+          </a>
+        </article>
+      </section>
     </Layouts.app>
     """
   end
