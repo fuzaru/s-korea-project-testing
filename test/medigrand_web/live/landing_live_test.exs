@@ -6,7 +6,7 @@ defmodule MedigrandWeb.LandingLiveTest do
   test "renders landing page with Korean default locale", %{conn: conn} do
     {:ok, _view, html} = live(conn, ~p"/")
 
-    assert html =~ "예약 시작하기"
+    assert html =~ "지금 예약하기"
     assert html =~ "?lang=en"
   end
 
@@ -14,10 +14,10 @@ defmodule MedigrandWeb.LandingLiveTest do
     conn = get(conn, ~p"/?lang=en")
 
     assert get_session(conn, :locale) == "en"
-    assert html_response(conn, 200) =~ "Start booking flow"
+    assert html_response(conn, 200) =~ "Book Appointment Now"
 
     conn = get(recycle(conn), ~p"/")
 
-    assert html_response(conn, 200) =~ "Start booking flow"
+    assert html_response(conn, 200) =~ "Book Appointment Now"
   end
 end

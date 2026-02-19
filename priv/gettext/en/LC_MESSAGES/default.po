@@ -10,6 +10,21 @@ msgstr "Browse doctors"
 msgid "Built for bilingual patient journeys and operational consistency."
 msgstr "Built for bilingual patient journeys and operational consistency."
 
+msgid "40% Off First Telemedicine Visit"
+msgstr "40% Off First Telemedicine Visit"
+
+msgid "Advertisement highlights"
+msgstr "Advertisement highlights"
+
+msgid "Automate repetitive intake and scheduling tasks so staff can focus on patients."
+msgstr "Automate repetitive intake and scheduling tasks so staff can focus on patients."
+
+msgid "Bilingual Care Team On Standby"
+msgstr "Bilingual Care Team On Standby"
+
+msgid "Book Appointment Now"
+msgstr "Book Appointment Now"
+
 msgid "CARE PROGRAMS"
 msgstr "CARE PROGRAMS"
 
@@ -22,6 +37,9 @@ msgstr "Clinic Productivity"
 msgid "CONSULTATIONS"
 msgstr "CONSULTATIONS"
 
+msgid "Coordinate follow-ups for your family and receive reminders in one place."
+msgstr "Coordinate follow-ups for your family and receive reminders in one place."
+
 msgid "Care Coordination"
 msgstr "Care Coordination"
 
@@ -31,17 +49,35 @@ msgstr "DOCTORS"
 msgid "English"
 msgstr "English"
 
+msgid "Expanded Weekend Availability"
+msgstr "Expanded Weekend Availability"
+
 msgid "FAQ"
 msgstr "FAQ"
+
+msgid "Family Plan"
+msgstr "Family Plan"
+
+msgid "Featured Offer"
+msgstr "Featured Offer"
 
 msgid "Featured highlights"
 msgstr "Featured highlights"
 
+msgid "Find nearby clinics with evening and weekend telemedicine slots."
+msgstr "Find nearby clinics with evening and weekend telemedicine slots."
+
 msgid "Get Started"
 msgstr "Get Started"
 
+msgid "Get booking help in Korean or English from our patient support specialists."
+msgstr "Get booking help in Korean or English from our patient support specialists."
+
 msgid "GUIDES"
 msgstr "GUIDES"
+
+msgid "Group Appointments In One Dashboard"
+msgstr "Group Appointments In One Dashboard"
 
 msgid "HOME"
 msgstr "HOME"
@@ -61,6 +97,12 @@ msgstr "Medigrant foundation for bilingual telemedicine booking."
 msgid "Medigrant logo"
 msgstr "Medigrant logo"
 
+msgid "New Clinics"
+msgstr "New Clinics"
+
+msgid "Next ad"
+msgstr "Next ad"
+
 msgid "Monitor Trends And Improve Outcomes"
 msgstr "Monitor Trends And Improve Outcomes"
 
@@ -73,6 +115,12 @@ msgstr "One Platform For Better Patient Access"
 msgid "Previous slide"
 msgstr "Previous slide"
 
+msgid "Previous ad"
+msgstr "Previous ad"
+
+msgid "Priority Support"
+msgstr "Priority Support"
+
 msgid "Reduce Front Desk Admin Overhead"
 msgstr "Reduce Front Desk Admin Overhead"
 
@@ -81,6 +129,9 @@ msgstr "Start booking flow"
 
 msgid "SERVICES"
 msgstr "SERVICES"
+
+msgid "Start your care journey with faster booking and lower first-visit costs this month."
+msgstr "Start your care journey with faster booking and lower first-visit costs this month."
 
 msgid "TELEMEDICINE"
 msgstr "TELEMEDICINE"

@@ -31,7 +31,7 @@ defmodule MedigrandWeb.Layouts do
     ~H"""
     <div class="min-h-screen">
       <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-green/600 backdrop-blur">
-        <div class="border-b border-slate-200/70">
+        <div class="border-b border-slate-200/70 bg-emerald-400/80 backdrop-blur-sm">
           <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
             <nav class="hidden items-center gap-6 text-sm font-medium text-slate-700 sm:flex">
               <a href={~p"/"}>{gettext("+82 28610902")}</a>
@@ -170,6 +170,12 @@ defmodule MedigrandWeb.Layouts do
                   "Handle multilingual bookings, reminders, and telemedicine visits from a single workflow."
                 )}
               </p>
+              <a
+                href={~p"/"}
+                class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+              >
+                {gettext("Book Appointment Now")}
+              </a>
             </article>
             <article class="hero-slide" data-slide>
               <p class="hero-slide__eyebrow">{gettext("Clinic Productivity")}</p>
@@ -179,6 +185,12 @@ defmodule MedigrandWeb.Layouts do
                   "Automate repetitive intake and scheduling tasks so staff can focus on patients."
                 )}
               </p>
+              <a
+                href={~p"/"}
+                class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+              >
+                {gettext("Book Appointment Now")}
+              </a>
             </article>
             <article class="hero-slide" data-slide>
               <p class="hero-slide__eyebrow">{gettext("Clinical Insights")}</p>
@@ -188,6 +200,12 @@ defmodule MedigrandWeb.Layouts do
                   "Track appointment demand, follow-up rates, and service performance in real time."
                 )}
               </p>
+              <a
+                href={~p"/"}
+                class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
+              >
+                {gettext("Book Appointment Now")}
+              </a>
             </article>
           </div>
 

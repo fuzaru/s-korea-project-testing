@@ -53,9 +53,78 @@ const HeroSlider = {
   },
 }
 
+const AdSlider = {
+  mounted() {
+    this.slides = Array.from(this.el.querySelectorAll("[data-ad-slide]"))
+    this.dots = Array.from(this.el.querySelectorAll("[data-ad-dot]"))
+    this.index = 0
+
+    if (this.slides.length === 0) return
+
+    this.show = index => {
+      const total = this.slides.length
+
+      this.slides.forEach((slide, idx) => {
+        slide.classList.remove("is-active", "is-left", "is-right", "is-hidden")
+
+        if (idx === index) {
+          slide.classList.add("is-active")
+          return
+        }
+
+        if (idx === (index - 1 + total) % total) {
+          slide.classList.add("is-left")
+          return
+        }
+
+        if (idx === (index + 1) % total) {
+          slide.classList.add("is-right")
+          return
+        }
+
+        slide.classList.add("is-hidden")
+      })
+
+      this.dots.forEach((dot, idx) => {
+        dot.classList.toggle("is-active", idx === index)
+      })
+    }
+
+    this.step = direction => {
+      const length = this.slides.length
+      this.index = direction === "next"
+        ? (this.index + 1) % length
+        : (this.index - 1 + length) % length
+      this.show(this.index)
+    }
+
+    this.boundClick = event => {
+      const button = event.target.closest("[data-ad-dir]")
+      if (!button) return
+      this.step(button.dataset.adDir)
+      this.restart()
+    }
+
+    this.restart = () => {
+      if (this.timer) clearInterval(this.timer)
+      this.timer = setInterval(() => this.step("next"), 4500)
+    }
+
+    this.el.addEventListener("click", this.boundClick)
+    this.show(this.index)
+    this.restart()
+  },
+
+  destroyed() {
+    if (this.timer) clearInterval(this.timer)
+    if (this.boundClick) this.el.removeEventListener("click", this.boundClick)
+  },
+}
+
 const hooks = {
   ...colocatedHooks,
   HeroSlider,
+  AdSlider,
 }
 
 const liveSocket = new LiveSocket("/live", Socket, {
