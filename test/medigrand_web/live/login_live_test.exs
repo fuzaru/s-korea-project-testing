@@ -8,5 +8,6 @@ defmodule MedigrandWeb.LoginLiveTest do
 
     assert html =~ "Welcome Back"
     assert html =~ "Log In"
+    assert html =~ "Create Account"
   end
 end

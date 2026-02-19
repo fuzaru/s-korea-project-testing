@@ -21,6 +21,7 @@ defmodule MedigrandWeb.Router do
     live_session :default, on_mount: [MedigrandWeb.Live.LocaleHook] do
       live "/", LandingLive, :index
       live "/login", LoginLive, :index
+      live "/create-account", CreateAccountLive, :index
     end
 
     get "/health", HealthController, :index
