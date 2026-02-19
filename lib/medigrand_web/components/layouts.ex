@@ -24,13 +24,18 @@ defmodule MedigrandWeb.Layouts do
   attr :flash, :map, required: true, doc: "the map of flash messages"
   attr :locale, :string, default: "ko"
   attr :current_path, :string, default: "/"
+  attr :show_nav, :boolean, default: true
+  attr :minimal_nav, :boolean, default: false
 
   slot :inner_block, required: true
 
   def app(assigns) do
     ~H"""
     <div class="min-h-screen">
-      <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-green/600 backdrop-blur">
+      <header
+        :if={@show_nav}
+        class="sticky top-0 z-10 border-b border-slate-200/80 bg-green/600 backdrop-blur"
+      >
         <div class="border-b border-slate-200/70 bg-emerald-400/80 backdrop-blur-sm">
           <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
             <nav class="hidden items-center gap-6 text-sm font-medium text-slate-700 sm:flex">
@@ -65,7 +70,10 @@ defmodule MedigrandWeb.Layouts do
             <span class="text-lg font-bold tracking-tight">{gettext("Medigrant")}</span>
           </a>
 
-          <nav class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex">
+          <nav
+            :if={!@minimal_nav}
+            class="hidden absolute left-1/2 -translate-x-1/2 items-center justify-center gap-3 sm:flex"
+          >
             <a
               href={~p"/"}
               class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
@@ -145,7 +153,8 @@ defmodule MedigrandWeb.Layouts do
           </nav>
 
           <a
-            href={~p"/"}
+            :if={!@minimal_nav}
+            href={~p"/login"}
             class="inline-flex items-center rounded-full border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
           >
             {gettext("Get Started")}
@@ -171,7 +180,7 @@ defmodule MedigrandWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/"}
+                href={~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}
@@ -186,7 +195,7 @@ defmodule MedigrandWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/"}
+                href={~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}
@@ -201,7 +210,7 @@ defmodule MedigrandWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/"}
+                href={~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}
