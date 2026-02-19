@@ -54,7 +54,7 @@ defmodule MedigrandWeb.LoginLive do
         <p class="mt-4 text-center text-sm text-slate-600">
           {gettext("No Account Yet?")}
           <a href={~p"/create-account"} class="font-semibold text-slate-900 hover:text-emerald-700">
-            {gettext("Sign Up Here")}
+            {gettext("Create Account")}
           </a>
         </p>
       </section>
