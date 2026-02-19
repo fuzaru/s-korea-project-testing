@@ -10,6 +10,9 @@ msgstr "의료진 둘러보기"
 msgid "Built for bilingual patient journeys and operational consistency."
 msgstr "이중 언어 환자 여정과 안정적인 운영을 위해 설계되었습니다."
 
+msgid "Book Appointment Now"
+msgstr "지금 예약하기"
+
 msgid "CARE PROGRAMS"
 msgstr "케어 프로그램"
 

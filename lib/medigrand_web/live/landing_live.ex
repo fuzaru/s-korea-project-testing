@@ -18,31 +18,84 @@ defmodule MedigrandWeb.LandingLive do
   def render(assigns) do
     ~H"""
     <Layouts.app flash={@flash} locale={@locale} current_path={@current_path}>
-      <section class="rounded-2xl bg-gradient-to-br from-slate-50 via-white to-emerald-50 p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
-        <p class="text-sm font-semibold tracking-wide text-emerald-700">
-          {gettext("Trusted telemedicine booking for clinics and hospitals")}
-        </p>
-        <h1 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          {gettext("Medigrant")}
-        </h1>
-        <p class="mt-4 max-w-2xl text-base text-slate-700">
-          {gettext("Korean-first scheduling foundation for white-label telemedicine portals.")}
-        </p>
+      <section
+        id="ad-slider"
+        phx-hook="AdSlider"
+        class="ad-slider mb-8"
+        aria-label={gettext("Advertisement highlights")}
+      >
+        <div class="ad-slider__stage">
+          <article class="ad-slide is-active" data-ad-slide>
+            <p class="ad-slide__kicker">{gettext("Featured Offer")}</p>
+            <h3 class="ad-slide__title">{gettext("40% Off First Telemedicine Visit")}</h3>
+            <p class="ad-slide__body">
+              {gettext(
+                "Start your care journey with faster booking and lower first-visit costs this month."
+              )}
+            </p>
+          </article>
 
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#"
-            class="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 font-semibold text-white transition hover:bg-emerald-500"
-          >
-            {gettext("Start booking flow")}
-          </a>
-          <a
-            href="#"
-            class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 font-semibold text-slate-800 transition hover:bg-slate-50"
-          >
-            {gettext("Browse doctors")}
-          </a>
+          <article class="ad-slide" data-ad-slide>
+            <p class="ad-slide__kicker">{gettext("Family Plan")}</p>
+            <h3 class="ad-slide__title">{gettext("Group Appointments In One Dashboard")}</h3>
+            <p class="ad-slide__body">
+              {gettext("Coordinate follow-ups for your family and receive reminders in one place.")}
+            </p>
+          </article>
+
+          <article class="ad-slide" data-ad-slide>
+            <p class="ad-slide__kicker">{gettext("New Clinics")}</p>
+            <h3 class="ad-slide__title">{gettext("Expanded Weekend Availability")}</h3>
+            <p class="ad-slide__body">
+              {gettext("Find nearby clinics with evening and weekend telemedicine slots.")}
+            </p>
+          </article>
+
+          <article class="ad-slide" data-ad-slide>
+            <p class="ad-slide__kicker">{gettext("Priority Support")}</p>
+            <h3 class="ad-slide__title">{gettext("Bilingual Care Team On Standby")}</h3>
+            <p class="ad-slide__body">
+              {gettext("Get booking help in Korean or English from our patient support specialists.")}
+            </p>
+          </article>
         </div>
+
+        <div class="ad-slider__meta">
+          <div class="ad-slider__controls">
+            <button
+              type="button"
+              class="ad-slider__btn"
+              data-ad-dir="prev"
+              aria-label={gettext("Previous ad")}
+            >
+              <.icon name="hero-chevron-left" class="size-4" />
+            </button>
+            <button
+              type="button"
+              class="ad-slider__btn"
+              data-ad-dir="next"
+              aria-label={gettext("Next ad")}
+            >
+              <.icon name="hero-chevron-right" class="size-4" />
+            </button>
+          </div>
+        </div>
+
+        <div class="ad-slider__dots" aria-hidden="true">
+          <span class="ad-dot is-active" data-ad-dot></span>
+          <span class="ad-dot" data-ad-dot></span>
+          <span class="ad-dot" data-ad-dot></span>
+          <span class="ad-dot" data-ad-dot></span>
+        </div>
+      </section>
+
+      <section class="rounded-2xl bg-gradient-to-br from-slate-50 via-white to-emerald-50 p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          {gettext("Did Medigrant help you?")}
+        </h2>
+        <p class="mt-4 max-w-2xl text-base text-slate-700">
+          {gettext("We take care of our patients with reliable booking, reminders, and support.")}
+        </p>
       </section>
       <section class="mt-8 grid gap-3 sm:grid-cols-1 lg:grid-cols-3">
         <article class="relative rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 p-5 pr-16 ring-2 ring-emerald-200 min-h-[320px]">

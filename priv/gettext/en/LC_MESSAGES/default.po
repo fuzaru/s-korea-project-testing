@@ -10,6 +10,9 @@ msgstr "Browse doctors"
 msgid "Built for bilingual patient journeys and operational consistency."
 msgstr "Built for bilingual patient journeys and operational consistency."
 
+msgid "Book Appointment Now"
+msgstr "Book Appointment Now"
+
 msgid "CARE PROGRAMS"
 msgstr "CARE PROGRAMS"
 
