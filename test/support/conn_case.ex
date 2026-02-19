@@ -19,12 +19,10 @@ defmodule MedigrandWeb.ConnCase do
 
   using do
     quote do
-      # The default endpoint for testing
       @endpoint MedigrandWeb.Endpoint
 
       use MedigrandWeb, :verified_routes
 
-      # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
       import MedigrandWeb.ConnCase
