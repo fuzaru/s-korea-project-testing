@@ -145,7 +145,7 @@ defmodule MedigrandWeb.Layouts do
           </nav>
 
           <a
-            href={~p"/"}
+            href={~p"/login"}
             class="inline-flex items-center rounded-full border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
           >
             {gettext("Get Started")}
