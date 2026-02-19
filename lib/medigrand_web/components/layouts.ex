@@ -31,7 +31,7 @@ defmodule MedigrandWeb.Layouts do
     ~H"""
     <div class="min-h-screen">
       <header class="sticky top-0 z-10 border-b border-slate-200/80 bg-green/600 backdrop-blur">
-        <div class="border-b border-slate-200/70">
+        <div class="border-b border-slate-200/70 bg-emerald-400/80 backdrop-blur-sm">
           <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
             <nav class="hidden items-center gap-6 text-sm font-medium text-slate-700 sm:flex">
               <a href={~p"/"}>{gettext("+82 28610902")}</a>
