@@ -17,7 +17,7 @@ defmodule MedigrandWeb.LoginLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash} locale={@locale} current_path={@current_path}>
+    <Layouts.app flash={@flash} locale={@locale} current_path={@current_path} show_nav={false}>
       <section class="mx-auto max-w-md rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
         <h1 class="text-2xl font-bold tracking-tight text-slate-900">{gettext("Welcome Back")}</h1>
         <p class="mt-2 text-sm text-slate-600">
