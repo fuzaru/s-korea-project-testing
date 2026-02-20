@@ -180,9 +180,9 @@ defmodule MedigrandWeb.LandingLive do
                 <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
                   {gettext("Terms of Use")}
                 </a>
-                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                <p class="font-medium text-slate-800">
                   {gettext("Contact Info")}
-                </a>
+                </p>
               </div>
 
               <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-700 ring-1 ring-slate-200">
