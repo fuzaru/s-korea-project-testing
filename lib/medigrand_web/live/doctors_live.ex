@@ -6,11 +6,15 @@ defmodule MedigrandWeb.DoctorsLive do
 
   @impl true
   def mount(_params, _session, socket) do
+    all_doctors = doctors()
+
     socket =
       socket
       |> assign_new(:current_path, fn -> ~p"/doctors" end)
       |> assign(:specialties, specialties())
-      |> assign(:doctors, doctors())
+      |> assign(:all_doctors, all_doctors)
+      |> assign(:doctors, all_doctors)
+      |> assign(:selected_specialty, all_specialties_label())
 
     {:ok, socket}
   end
@@ -43,7 +47,15 @@ defmodule MedigrandWeb.DoctorsLive do
               <%= for specialty <- @specialties do %>
                 <button
                   type="button"
-                  class="rounded-full border border-slate-200 bg-white px-4 py-1.5 text-sm text-slate-600 transition hover:border-emerald-400 hover:text-emerald-700"
+                  phx-click="filter"
+                  phx-value-specialty={specialty}
+                  class={[
+                    "rounded-full border px-4 py-1.5 text-sm transition",
+                    @selected_specialty == specialty &&
+                      "border-emerald-400 bg-emerald-50 font-semibold text-emerald-800",
+                    @selected_specialty != specialty &&
+                      "border-slate-200 bg-white text-slate-600 hover:border-emerald-400 hover:text-emerald-700"
+                  ]}
                 >
                   {specialty}
                 </button>
@@ -145,6 +157,18 @@ defmodule MedigrandWeb.DoctorsLive do
     """
   end
 
+  @impl true
+  def handle_event("filter", %{"specialty" => specialty}, socket) do
+    doctors =
+      if specialty == all_specialties_label() do
+        socket.assigns.all_doctors
+      else
+        Enum.filter(socket.assigns.all_doctors, fn doctor -> doctor.role == specialty end)
+      end
+
+    {:noreply, assign(socket, doctors: doctors, selected_specialty: specialty)}
+  end
+
   defp path_with_query(uri) do
     parsed = URI.parse(uri)
 
@@ -156,12 +180,17 @@ defmodule MedigrandWeb.DoctorsLive do
 
   defp specialties do
     [
+      all_specialties_label(),
       gettext("Primary Care"),
       gettext("Dermatology"),
       gettext("Pediatrics"),
       gettext("Women's Health"),
       gettext("Mental Health")
     ]
+  end
+
+  defp all_specialties_label do
+    gettext("All specialties")
   end
 
   defp doctors do
