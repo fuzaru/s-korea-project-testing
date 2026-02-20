@@ -410,3 +410,133 @@ msgstr "you@example.com"
 #, elixir-autogen, elixir-format
 msgid "한국어"
 msgstr "한국어"
+
+#: lib/medigrand_web/live/doctors_live.ex:31
+#, elixir-autogen, elixir-format
+msgid "Trusted Specialists"
+msgstr "전문의"
+
+#: lib/medigrand_web/live/doctors_live.ex:34
+#, elixir-autogen, elixir-format
+msgid "Meet Our Doctors"
+msgstr "의료진 만나기"
+
+#: lib/medigrand_web/live/doctors_live.ex:37
+#, elixir-autogen, elixir-format
+msgid "Book a virtual or in-clinic visit with bilingual specialists."
+msgstr "이중 언어 전문의와 화상 또는 방문 진료를 예약하세요."
+
+#: lib/medigrand_web/live/doctors_live.ex:41
+#, elixir-autogen, elixir-format
+msgid "Search by specialty"
+msgstr "진료 과목으로 검색"
+
+#: lib/medigrand_web/live/doctors_live.ex:57
+#, elixir-autogen, elixir-format
+msgid "Available today"
+msgstr "오늘 예약 가능"
+
+#: lib/medigrand_web/live/doctors_live.ex:63
+#, elixir-autogen, elixir-format
+msgid "Patients this week"
+msgstr "이번 주 환자"
+
+#: lib/medigrand_web/live/doctors_live.ex:69
+#, elixir-autogen, elixir-format
+msgid "Avg. rating"
+msgstr "평균 평점"
+
+#: lib/medigrand_web/live/doctors_live.ex:77
+#, elixir-autogen, elixir-format
+msgid "Response time"
+msgstr "응답 시간"
+
+#: lib/medigrand_web/live/doctors_live.ex:80
+#, elixir-autogen, elixir-format
+msgid "Under 10 minutes"
+msgstr "10분 이내"
+
+#: lib/medigrand_web/live/doctors_live.ex:85
+#, elixir-autogen, elixir-format
+msgid "Next available"
+msgstr "다음 가능 시간"
+
+#: lib/medigrand_web/live/doctors_live.ex:88
+#, elixir-autogen, elixir-format
+msgid "Today 3:30 PM"
+msgstr "오늘 오후 3:30"
+
+#: lib/medigrand_web/live/doctors_live.ex:114
+#, elixir-autogen, elixir-format
+msgid "Languages"
+msgstr "언어"
+
+#: lib/medigrand_web/live/doctors_live.ex:120
+#, elixir-autogen, elixir-format
+msgid "Years of experience"
+msgstr "경력"
+
+#: lib/medigrand_web/live/doctors_live.ex:131
+#, elixir-autogen, elixir-format
+msgid "Book appointment"
+msgstr "진료 예약"
+
+#: lib/medigrand_web/live/doctors_live.ex:137
+#, elixir-autogen, elixir-format
+msgid "View profile"
+msgstr "프로필 보기"
+
+#: lib/medigrand_web/live/doctors_live.ex:159
+#, elixir-autogen, elixir-format
+msgid "Primary Care"
+msgstr "일반 진료"
+
+#: lib/medigrand_web/live/doctors_live.ex:160
+#, elixir-autogen, elixir-format
+msgid "Dermatology"
+msgstr "피부과"
+
+#: lib/medigrand_web/live/doctors_live.ex:161
+#, elixir-autogen, elixir-format
+msgid "Pediatrics"
+msgstr "소아과"
+
+#: lib/medigrand_web/live/doctors_live.ex:162
+#, elixir-autogen, elixir-format
+msgid "Women's Health"
+msgstr "여성 건강"
+
+#: lib/medigrand_web/live/doctors_live.ex:163
+#, elixir-autogen, elixir-format
+msgid "Mental Health"
+msgstr "정신 건강"
+
+#: lib/medigrand_web/live/doctors_live.ex:175
+#, elixir-autogen, elixir-format
+msgid "12 years"
+msgstr "12년"
+
+#: lib/medigrand_web/live/doctors_live.ex:183
+#, elixir-autogen, elixir-format
+msgid "9 years"
+msgstr "9년"
+
+#: lib/medigrand_web/live/doctors_live.ex:191
+#, elixir-autogen, elixir-format
+msgid "11 years"
+msgstr "11년"
+
+#: lib/medigrand_web/live/doctors_live.ex:199
+#, elixir-autogen, elixir-format
+msgid "14 years"
+msgstr "14년"
+
+#: lib/medigrand_web/live/doctors_live.ex:207
+#, elixir-autogen, elixir-format
+msgid "8 years"
+msgstr "8년"
+
+#: lib/medigrand_web/live/doctors_live.ex:215
+#, elixir-autogen, elixir-format
+msgid "10 years"
+msgstr "10년"

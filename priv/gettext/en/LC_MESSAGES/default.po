@@ -119,6 +119,136 @@ msgstr "DOCTORS"
 msgid "Date of Birth"
 msgstr ""
 
+#: lib/medigrand_web/live/doctors_live.ex:31
+#, elixir-autogen, elixir-format
+msgid "Trusted Specialists"
+msgstr "Trusted Specialists"
+
+#: lib/medigrand_web/live/doctors_live.ex:34
+#, elixir-autogen, elixir-format
+msgid "Meet Our Doctors"
+msgstr "Meet Our Doctors"
+
+#: lib/medigrand_web/live/doctors_live.ex:37
+#, elixir-autogen, elixir-format
+msgid "Book a virtual or in-clinic visit with bilingual specialists."
+msgstr "Book a virtual or in-clinic visit with bilingual specialists."
+
+#: lib/medigrand_web/live/doctors_live.ex:41
+#, elixir-autogen, elixir-format
+msgid "Search by specialty"
+msgstr "Search by specialty"
+
+#: lib/medigrand_web/live/doctors_live.ex:57
+#, elixir-autogen, elixir-format
+msgid "Available today"
+msgstr "Available today"
+
+#: lib/medigrand_web/live/doctors_live.ex:63
+#, elixir-autogen, elixir-format
+msgid "Patients this week"
+msgstr "Patients this week"
+
+#: lib/medigrand_web/live/doctors_live.ex:69
+#, elixir-autogen, elixir-format
+msgid "Avg. rating"
+msgstr "Avg. rating"
+
+#: lib/medigrand_web/live/doctors_live.ex:77
+#, elixir-autogen, elixir-format
+msgid "Response time"
+msgstr "Response time"
+
+#: lib/medigrand_web/live/doctors_live.ex:80
+#, elixir-autogen, elixir-format
+msgid "Under 10 minutes"
+msgstr "Under 10 minutes"
+
+#: lib/medigrand_web/live/doctors_live.ex:85
+#, elixir-autogen, elixir-format
+msgid "Next available"
+msgstr "Next available"
+
+#: lib/medigrand_web/live/doctors_live.ex:88
+#, elixir-autogen, elixir-format
+msgid "Today 3:30 PM"
+msgstr "Today 3:30 PM"
+
+#: lib/medigrand_web/live/doctors_live.ex:114
+#, elixir-autogen, elixir-format
+msgid "Languages"
+msgstr "Languages"
+
+#: lib/medigrand_web/live/doctors_live.ex:120
+#, elixir-autogen, elixir-format
+msgid "Years of experience"
+msgstr "Years of experience"
+
+#: lib/medigrand_web/live/doctors_live.ex:131
+#, elixir-autogen, elixir-format
+msgid "Book appointment"
+msgstr "Book appointment"
+
+#: lib/medigrand_web/live/doctors_live.ex:137
+#, elixir-autogen, elixir-format
+msgid "View profile"
+msgstr "View profile"
+
+#: lib/medigrand_web/live/doctors_live.ex:159
+#, elixir-autogen, elixir-format
+msgid "Primary Care"
+msgstr "Primary Care"
+
+#: lib/medigrand_web/live/doctors_live.ex:160
+#, elixir-autogen, elixir-format
+msgid "Dermatology"
+msgstr "Dermatology"
+
+#: lib/medigrand_web/live/doctors_live.ex:161
+#, elixir-autogen, elixir-format
+msgid "Pediatrics"
+msgstr "Pediatrics"
+
+#: lib/medigrand_web/live/doctors_live.ex:162
+#, elixir-autogen, elixir-format
+msgid "Women's Health"
+msgstr "Women's Health"
+
+#: lib/medigrand_web/live/doctors_live.ex:163
+#, elixir-autogen, elixir-format
+msgid "Mental Health"
+msgstr "Mental Health"
+
+#: lib/medigrand_web/live/doctors_live.ex:175
+#, elixir-autogen, elixir-format
+msgid "12 years"
+msgstr "12 years"
+
+#: lib/medigrand_web/live/doctors_live.ex:183
+#, elixir-autogen, elixir-format
+msgid "9 years"
+msgstr "9 years"
+
+#: lib/medigrand_web/live/doctors_live.ex:191
+#, elixir-autogen, elixir-format
+msgid "11 years"
+msgstr "11 years"
+
+#: lib/medigrand_web/live/doctors_live.ex:199
+#, elixir-autogen, elixir-format
+msgid "14 years"
+msgstr "14 years"
+
+#: lib/medigrand_web/live/doctors_live.ex:207
+#, elixir-autogen, elixir-format
+msgid "8 years"
+msgstr "8 years"
+
+#: lib/medigrand_web/live/doctors_live.ex:215
+#, elixir-autogen, elixir-format
+msgid "10 years"
+msgstr "10 years"
+
 #: lib/medigrand_web/live/landing_live.ex:94
 #, elixir-autogen, elixir-format
 msgid "Did Medigrant help you?"

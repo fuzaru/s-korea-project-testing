@@ -81,7 +81,7 @@ defmodule MedigrandWeb.Layouts do
               {gettext("HOME")}
             </a>
             <a
-              href={~p"/"}
+              href={~p"/doctors"}
               class="inline-flex items-center rounded-md px-6 py-1.5 text-sm font-medium text-slate-900 transition hover:bg-emerald-300 hover:text-white"
             >
               {gettext("DOCTORS")}

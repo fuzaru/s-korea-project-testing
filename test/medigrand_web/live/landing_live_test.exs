@@ -1,4 +1,7 @@
 defmodule MedigrandWeb.LandingLiveTest do
+  @moduledoc """
+  This module tests the LandingLive live view, which is responsible for rendering the landing page and handling user interactions related to the landing page, such as locale selection.
+  """
   use MedigrandWeb.ConnCase, async: true
 
   import Phoenix.LiveViewTest
