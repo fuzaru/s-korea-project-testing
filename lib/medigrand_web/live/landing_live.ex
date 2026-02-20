@@ -140,6 +140,78 @@ defmodule MedigrandWeb.LandingLive do
           </a>
         </article>
       </section>
+
+      <section class="relative left-1/2 right-1/2 mt-10 w-screen -translate-x-1/2 border-y border-slate-200 bg-white shadow-sm">
+        <div class="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
+          <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+            <div>
+              <div class="flex items-center gap-3">
+                <img src={~p"/images/logo.svg"} alt={gettext("Medigrant logo")} class="h-11 w-11" />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">
+                    {gettext("More Information")}
+                  </p>
+                  <h3 class="text-xl font-bold text-slate-900">{gettext("Medigrant")}</h3>
+                </div>
+              </div>
+
+              <p class="mt-4 max-w-2xl text-sm italic text-slate-700">
+                {gettext(
+                  "\"Caring connections, trusted doctors, and easier appointments for everyone.\""
+                )}
+              </p>
+
+              <div class="mt-6 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("Company")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("About")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("Services")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("Announcements")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("FAQs")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("Terms of Use")}
+                </a>
+                <a href="#" class="font-medium text-slate-800 transition hover:text-emerald-700">
+                  {gettext("Contact Info")}
+                </a>
+              </div>
+
+              <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-700 ring-1 ring-slate-200">
+                <p class="font-semibold text-slate-900">{gettext("Contact Information")}</p>
+                <p class="mt-1">{gettext("Tel: +82-2-0000-0000")}</p>
+                <p>{gettext("Email: support@medigrant.com")}</p>
+                <p>{gettext("Address: Teheran-ro, Gangnam-gu, Seoul, South Korea")}</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-600">
+                {gettext("Company Location")}
+              </p>
+              <div class="overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                <iframe
+                  title={gettext("Medigrant company location map")}
+                  src="https://www.google.com/maps?q=Teheran-ro,Gangnam-gu,Seoul,South+Korea&z=14&output=embed"
+                  class="h-72 w-full"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layouts.app>
     """
   end
