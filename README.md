@@ -190,6 +190,7 @@ mix deps.get
 
 ```bash
 mix setup
+mix test
 ```
 
 4. Start app.
