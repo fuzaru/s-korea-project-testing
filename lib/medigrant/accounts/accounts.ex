@@ -8,7 +8,7 @@ defmodule Medigrant.Accounts do
   alias Medigrant.Accounts.{Doctor, Patient}
 
   def create_patient(attrs) do
-    Patient
+    %Patient{}
     |> Patient.changeset(attrs)
     |> Repo.insert()
   end
@@ -35,7 +35,7 @@ defmodule Medigrant.Accounts do
   end
 
   def create_doctor(attrs) do
-    Doctor
+    %Doctor{}
     |> Doctor.changeset(attrs)
     |> Repo.insert()
   end
