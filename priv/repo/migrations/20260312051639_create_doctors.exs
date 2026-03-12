@@ -1,4 +1,4 @@
-defmodule Medigrant.Repo.Migrations.Doctors do
+defmodule Medigrant.Repo.Migrations.CreateDoctors do
   use Ecto.Migration
 
   def change do
