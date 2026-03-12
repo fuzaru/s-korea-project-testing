@@ -7,8 +7,8 @@ defmodule Medigrant.Accounts.Patient do
   import Ecto.Changeset
 
   schema "patients" do
-    field :email, :string
     field :name, :string
+    field :email, :string
     field :password_hash, :string
 
     timestamps()
@@ -17,8 +17,8 @@ defmodule Medigrant.Accounts.Patient do
   @doc false
   def changeset(patient, attrs) do
     patient
-    |> cast(attrs, [:email, :name, :password_hash])
-    |> validate_required([:email, :name, :password_hash])
+    |> cast(attrs, [:name, :email, :password_hash])
+    |> validate_required([:name, :email, :password_hash])
     |> unique_constraint(:email)
   end
 end
