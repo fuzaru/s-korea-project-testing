@@ -26,6 +26,7 @@ defmodule MedigrantWeb.Layouts do
   attr :current_path, :string, default: "/"
   attr :show_nav, :boolean, default: true
   attr :minimal_nav, :boolean, default: false
+  attr :logged_in, :boolean, default: false
 
   slot :inner_block, required: true
 
@@ -154,10 +155,10 @@ defmodule MedigrantWeb.Layouts do
 
           <a
             :if={!@minimal_nav}
-            href={~p"/login"}
+            href={if @logged_in, do: ~p"/doctors", else: ~p"/login"}
             class="inline-flex items-center rounded-full border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
           >
-            {gettext("Get Started")}
+            {if @logged_in, do: gettext("Book Appointment"), else: gettext("Get Started")}
           </a>
         </div>
       </header>
@@ -180,7 +181,7 @@ defmodule MedigrantWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/login"}
+                href={if @logged_in, do: ~p"/doctors", else: ~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}
@@ -195,7 +196,7 @@ defmodule MedigrantWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/login"}
+                href={if @logged_in, do: ~p"/doctors", else: ~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}
@@ -210,7 +211,7 @@ defmodule MedigrantWeb.Layouts do
                 )}
               </p>
               <a
-                href={~p"/login"}
+                href={if @logged_in, do: ~p"/doctors", else: ~p"/login"}
                 class="mt-4 inline-flex items-center rounded-xl border border-black px-6 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-300 hover:text-white"
               >
                 {gettext("Book Appointment Now")}

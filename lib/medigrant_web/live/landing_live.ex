@@ -17,7 +17,12 @@ defmodule MedigrantWeb.LandingLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash} locale={@locale} current_path={@current_path}>
+    <Layouts.app
+      flash={@flash}
+      locale={@locale}
+      current_path={@current_path}
+      logged_in={@logged_in}
+    >
       <section
         id="ad-slider"
         phx-hook="AdSlider"

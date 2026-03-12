@@ -27,7 +27,12 @@ defmodule MedigrantWeb.DoctorsLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash} locale={@locale} current_path={@current_path}>
+    <Layouts.app
+      flash={@flash}
+      locale={@locale}
+      current_path={@current_path}
+      logged_in={@logged_in}
+    >
       <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>

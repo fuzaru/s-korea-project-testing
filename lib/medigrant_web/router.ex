@@ -18,12 +18,15 @@ defmodule MedigrantWeb.Router do
   scope "/", MedigrantWeb do
     pipe_through :browser
 
-    live_session :default, on_mount: [MedigrantWeb.Live.LocaleHook] do
+    live_session :default, on_mount: [MedigrantWeb.Live.LocaleHook, MedigrantWeb.Live.AuthHook] do
       live "/", LandingLive, :index
       live "/doctors", DoctorsLive, :index
       live "/login", LoginLive, :index
       live "/create-account", CreateAccountLive, :index
     end
+
+    post "/session", SessionController, :create
+    delete "/session", SessionController, :delete
 
     get "/health", HealthController, :index
   end
