@@ -1,4 +1,4 @@
-defmodulde Medigrant.Accounts.Doctor do
+defmodule Medigrant.Accounts.Doctor do
   @moduledoc """
   Doctor schema.
   It includes fields for name, specialization, and license number.
