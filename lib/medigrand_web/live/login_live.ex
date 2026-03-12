@@ -49,6 +49,18 @@ defmodule MedigrandWeb.LoginLive do
           >
             {gettext("Log In")}
           </button>
+          <button
+            type="button"
+            class="inline-flex w-full items-center justify-center rounded-xl border border-slate-300 bg-yellow-400 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-yellow-500"
+          >
+            {gettext("Log In with KakaoTalk")}
+          </button>
+          <button
+            type="button"
+            class="inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+          >
+            {gettext("Log In with Google")}
+          </button>
         </form>
 
         <p class="mt-4 text-center text-sm text-slate-600">
