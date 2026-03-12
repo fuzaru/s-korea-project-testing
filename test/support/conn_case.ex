@@ -1,4 +1,4 @@
-defmodule MedigrandWeb.ConnCase do
+defmodule MedigrantWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule MedigrandWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use MedigrandWeb.ConnCase, async: true`, although
+  by setting `use MedigrantWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -19,18 +19,18 @@ defmodule MedigrandWeb.ConnCase do
 
   using do
     quote do
-      @endpoint MedigrandWeb.Endpoint
+      @endpoint MedigrantWeb.Endpoint
 
-      use MedigrandWeb, :verified_routes
+      use MedigrantWeb, :verified_routes
 
       import Plug.Conn
       import Phoenix.ConnTest
-      import MedigrandWeb.ConnCase
+      import MedigrantWeb.ConnCase
     end
   end
 
   setup tags do
-    Medigrand.DataCase.setup_sandbox(tags)
+    Medigrant.DataCase.setup_sandbox(tags)
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
 end

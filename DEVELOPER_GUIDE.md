@@ -5,8 +5,8 @@ This guide explains what the main files/folders are for, and what to do every da
 ## 1. Mental Model
 
 - `lib/` = application code.
-- `lib/medigrand/` = business/domain code (accounts, bookings, catalog, API adapter).
-- `lib/medigrand_web/` = web layer (router, controllers, LiveView, components).
+- `lib/medigrant/` = business/domain code (accounts, bookings, catalog, API adapter).
+- `lib/medigrant_web/` = web layer (router, controllers, LiveView, components).
 - `test/` = tests.
 - `config/` = environment configuration (`dev`, `test`, `prod`, runtime).
 - `assets/` = frontend CSS/JS build inputs.
@@ -21,12 +21,12 @@ This guide explains what the main files/folders are for, and what to do every da
 - `config/dev.exs`: dev database and dev-only behavior.
 - `config/test.exs`: test database configuration.
 - `config/runtime.exs`: runtime config loaded when app boots.
-- `lib/medigrand/application.ex`: starts supervised processes for the app.
-- `lib/medigrand/repo.ex`: Ecto Repo (database access entrypoint).
-- `lib/medigrand_web/router.ex`: routes (`/`, `/health`, browser pipeline).
-- `lib/medigrand_web/endpoint.ex`: HTTP endpoint setup and plugs.
-- `lib/medigrand_web/live/landing_live.ex`: landing page LiveView.
-- `lib/medigrand_web/plugs/locale.ex`: locale (`ko`/`en`) selection.
+- `lib/medigrant/application.ex`: starts supervised processes for the app.
+- `lib/medigrant/repo.ex`: Ecto Repo (database access entrypoint).
+- `lib/medigrant_web/router.ex`: routes (`/`, `/health`, browser pipeline).
+- `lib/medigrant_web/endpoint.ex`: HTTP endpoint setup and plugs.
+- `lib/medigrant_web/live/landing_live.ex`: landing page LiveView.
+- `lib/medigrant_web/plugs/locale.ex`: locale (`ko`/`en`) selection.
 - `test/support/conn_case.ex`: setup helpers for controller/HTTP tests.
 - `test/support/data_case.ex`: setup helpers for DB tests (SQL sandbox).
 - `priv/repo/seeds.exs`: seed data script run by `mix ecto.setup`.

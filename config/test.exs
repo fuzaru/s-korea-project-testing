@@ -7,9 +7,9 @@ test_db_host = System.get_env("TEST_DB_HOST", System.get_env("DB_HOST", "localho
 test_db_port =
   String.to_integer(System.get_env("TEST_DB_PORT", System.get_env("DB_PORT", "5432")))
 
-test_db_name = System.get_env("TEST_DB_NAME", "medigrand_test")
+test_db_name = System.get_env("TEST_DB_NAME", "medigrant_test")
 
-config :medigrand, Medigrand.Repo,
+config :medigrant, Medigrant.Repo,
   username: test_db_user,
   password: test_db_pass,
   hostname: test_db_host,
@@ -18,7 +18,7 @@ config :medigrand, Medigrand.Repo,
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: System.schedulers_online() * 2
 
-config :medigrand, MedigrandWeb.Endpoint,
+config :medigrant, MedigrantWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "sCV+3lr52G8WzYsYQBJvZHixJfMd3nHQYjw27WZvuC2duIvs831ODoRg38LBK5cX",
   server: false

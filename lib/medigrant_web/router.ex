@@ -1,0 +1,40 @@
+defmodule MedigrantWeb.Router do
+  use MedigrantWeb, :router
+
+  pipeline :browser do
+    plug :accepts, ["html"]
+    plug :fetch_session
+    plug :fetch_live_flash
+    plug MedigrantWeb.Plugs.Locale
+    plug :put_root_layout, html: {MedigrantWeb.Layouts, :root}
+    plug :protect_from_forgery
+    plug :put_secure_browser_headers
+  end
+
+  pipeline :api do
+    plug :accepts, ["json"]
+  end
+
+  scope "/", MedigrantWeb do
+    pipe_through :browser
+
+    live_session :default, on_mount: [MedigrantWeb.Live.LocaleHook] do
+      live "/", LandingLive, :index
+      live "/doctors", DoctorsLive, :index
+      live "/login", LoginLive, :index
+      live "/create-account", CreateAccountLive, :index
+    end
+
+    get "/health", HealthController, :index
+  end
+
+  if Application.compile_env(:medigrant, :dev_routes) do
+    import Phoenix.LiveDashboard.Router
+
+    scope "/dev" do
+      pipe_through :browser
+
+      live_dashboard "/dashboard", metrics: MedigrantWeb.Telemetry
+    end
+  end
+end

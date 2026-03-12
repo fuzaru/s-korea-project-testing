@@ -1,9 +1,9 @@
-defmodule Medigrand.MixProject do
+defmodule Medigrant.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :medigrand,
+      app: :medigrant,
       version: "0.1.0",
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -18,7 +18,7 @@ defmodule Medigrand.MixProject do
 
   def application do
     [
-      mod: {Medigrand.Application, []},
+      mod: {Medigrant.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -77,10 +77,10 @@ defmodule Medigrand.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["compile", "tailwind medigrand", "esbuild medigrand"],
+      "assets.build": ["compile", "tailwind medigrant", "esbuild medigrant"],
       "assets.deploy": [
-        "tailwind medigrand --minify",
-        "esbuild medigrand --minify",
+        "tailwind medigrant --minify",
+        "esbuild medigrant --minify",
         "phx.digest"
       ],
       quality: [
