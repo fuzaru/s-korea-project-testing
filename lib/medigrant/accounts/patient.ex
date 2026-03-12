@@ -1,4 +1,4 @@
-defmodule Medigrant.Accounts.User do
+defmodule Medigrant.Accounts.Patient do
   @moduledoc """
   User schema.
   It includes fields for email, name, and password hash.
@@ -6,7 +6,7 @@ defmodule Medigrant.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "users" do
+  schema "patients" do
     field :email, :string
     field :name, :string
     field :password_hash, :string
@@ -15,8 +15,8 @@ defmodule Medigrant.Accounts.User do
   end
 
   @doc false
-  def changeset(user, attrs) do
-    user
+  def changeset(patient, attrs) do
+    patient
     |> cast(attrs, [:email, :name, :password_hash])
     |> validate_required([:email, :name, :password_hash])
     |> unique_constraint(:email)
