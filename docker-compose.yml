@@ -1,18 +1,18 @@
 services:
   db:
     image: postgres:16
-    container_name: medigrand-postgres
+    container_name: medigrant-postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: medigrand_dev
+      POSTGRES_DB: medigrant_dev
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d medigrand_dev"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d medigrant_dev"]
       interval: 5s
       timeout: 3s
       retries: 20

@@ -1,2 +1,2 @@
 ExUnit.start()
-Ecto.Adapters.SQL.Sandbox.mode(Medigrand.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(Medigrant.Repo, :manual)

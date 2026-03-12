@@ -7,8 +7,8 @@ variables:
   TEST_DB_PASS: postgres
   TEST_DB_HOST: postgres
   TEST_DB_PORT: "5432"
-  TEST_DB_NAME: medigrand_test
-  POSTGRES_DB: medigrand_test
+  TEST_DB_NAME: medigrant_test
+  POSTGRES_DB: medigrant_test
   POSTGRES_USER: postgres
   POSTGRES_PASSWORD: postgres
 

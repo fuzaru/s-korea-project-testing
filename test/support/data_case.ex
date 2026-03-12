@@ -1,4 +1,4 @@
-defmodule Medigrand.DataCase do
+defmodule Medigrant.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -10,7 +10,7 @@ defmodule Medigrand.DataCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use Medigrand.DataCase, async: true`, although
+  by setting `use Medigrant.DataCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -19,17 +19,17 @@ defmodule Medigrand.DataCase do
 
   using do
     quote do
-      alias Medigrand.Repo
+      alias Medigrant.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Medigrand.DataCase
+      import Medigrant.DataCase
     end
   end
 
   setup tags do
-    Medigrand.DataCase.setup_sandbox(tags)
+    Medigrant.DataCase.setup_sandbox(tags)
     :ok
   end
 
@@ -37,7 +37,7 @@ defmodule Medigrand.DataCase do
   Sets up the sandbox based on the test tags.
   """
   def setup_sandbox(tags) do
-    pid = Sandbox.start_owner!(Medigrand.Repo, shared: not tags[:async])
+    pid = Sandbox.start_owner!(Medigrant.Repo, shared: not tags[:async])
     on_exit(fn -> Sandbox.stop_owner(pid) end)
   end
 

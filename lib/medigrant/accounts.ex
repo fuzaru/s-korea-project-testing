@@ -1,0 +1,12 @@
+defmodule Medigrant.Accounts do
+  @moduledoc """
+  Accounts context for authentication and patient identity orchestration.
+  """
+
+  @client Application.compile_env(:medigrant, :see_you_doc_client, Medigrant.SeeYouDocHTTP)
+
+  @spec authenticate(map()) :: {:ok, map()} | {:error, term()}
+  def authenticate(credentials) when is_map(credentials) do
+    @client.authenticate(credentials)
+  end
+end

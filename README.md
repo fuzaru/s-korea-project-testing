@@ -1,4 +1,4 @@
-# Medigrand Foundation (Phoenix)
+# Medigrant Foundation (Phoenix)
 
 Foundation for a bilingual (Korean primary, English secondary) telemedicine booking site.
 
@@ -228,7 +228,7 @@ mix phx.server
 
 ## Foundation implemented
 
-- Root route (`/`) served by `MedigrandWeb.LandingLive`
+- Root route (`/`) served by `MedigrantWeb.LandingLive`
 - Health check route (`/health`) returns `ok`
 - Locale system:
   - default locale is `ko`
@@ -237,32 +237,32 @@ mix phx.server
   - locale persisted in session
 - Mobile-first base layout with header/footer and Korean-friendly font stack
 - Context scaffolding:
-  - `Medigrand.Accounts`
-  - `Medigrand.Catalog`
-  - `Medigrand.Bookings`
+  - `Medigrant.Accounts`
+  - `Medigrant.Catalog`
+  - `Medigrant.Bookings`
 - External API integration placeholder:
-  - `Medigrand.SeeYouDocClient` behaviour
-  - `Medigrand.SeeYouDocHTTP` adapter stub (no real endpoints)
+  - `Medigrant.SeeYouDocClient` behaviour
+  - `Medigrant.SeeYouDocHTTP` adapter stub (no real endpoints)
 
 ## Project structure highlights
 
-- `lib/medigrand_web/live/landing_live.ex`: landing page LiveView
-- `lib/medigrand_web/plugs/locale.ex`: browser locale + session persistence
-- `lib/medigrand_web/live/locale_hook.ex`: LiveView locale assignment
-- `lib/medigrand_web/components/layouts.ex`: header/footer + locale toggle
-- `lib/medigrand_web/controllers/health_controller.ex`: uptime endpoint
-- `lib/medigrand/{accounts,catalog,bookings}.ex`: context foundations
-- `lib/medigrand/{see_you_doc_client,see_you_doc_http}.ex`: API behaviour + adapter stub
+- `lib/medigrant_web/live/landing_live.ex`: landing page LiveView
+- `lib/medigrant_web/plugs/locale.ex`: browser locale + session persistence
+- `lib/medigrant_web/live/locale_hook.ex`: LiveView locale assignment
+- `lib/medigrant_web/components/layouts.ex`: header/footer + locale toggle
+- `lib/medigrant_web/controllers/health_controller.ex`: uptime endpoint
+- `lib/medigrant/{accounts,catalog,bookings}.ex`: context foundations
+- `lib/medigrant/{see_you_doc_client,see_you_doc_http}.ex`: API behaviour + adapter stub
 - `priv/gettext/{ko,en}/LC_MESSAGES/default.po`: UI translations
 
 ## Extending for real REST APIs later
 
-1. Keep `Medigrand.SeeYouDocClient` callbacks as the integration contract.
-2. Replace stub bodies in `Medigrand.SeeYouDocHTTP` with `Req` calls.
+1. Keep `Medigrant.SeeYouDocClient` callbacks as the integration contract.
+2. Replace stub bodies in `Medigrant.SeeYouDocHTTP` with `Req` calls.
 3. Add request/response mappers per resource (`doctors`, `bookings`, `auth`).
 4. Add adapter tests with mocked HTTP, then context integration tests.
 5. If needed, create additional adapters and swap with config:
 
 ```elixir
-config :medigrand, :see_you_doc_client, MyCustomAdapter
+config :medigrant, :see_you_doc_client, MyCustomAdapter
 ```
