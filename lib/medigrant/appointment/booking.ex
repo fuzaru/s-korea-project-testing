@@ -2,7 +2,6 @@ defmodule Medigrant.Appointment do
   @moduledoc """
   Appointment context for managing appointments and related workflows.
   """
-  alias Medigrant.Bookings
   use Ecto.Schema
   import Ecto.Changeset
 
